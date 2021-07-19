@@ -18,12 +18,16 @@ const NavBar = () => {
   const closeMobileMenu = () => {
     setClick(false);
   };
+  // add button
+  //measure size of button
+  //measure distance
+  // hover
 
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
         <Link href="/">
-          <Image src={logo} alt="Logo" width={150} height={40} />
+          <Image src={logo} alt="Logo" width={180} height={60} />
         </Link>
       </div>
       <div className={styles.togglebtn} onClick={handleClick}>
@@ -32,26 +36,21 @@ const NavBar = () => {
         </Link>
       </div>
       <div className={styles.navBarLinks}>
-        <div>
-          <Link href="/about" onClick={closeMobileMenu}>
-            <a className={styles.link}> About</a>
-          </Link>
-        </div>
-        <div className={styles.servicesContainer}>
-          <Link href="" onClick={closeMobileMenu}>
-            <a className={styles.link}>Services</a>
-          </Link>
-        </div>
-        <div>
-          <Link href="/about" onClick={closeMobileMenu}>
-            <a className={styles.link}> Project</a>
-          </Link>
-        </div>
-        <div>
-          <Link href="/contact" onClick={closeMobileMenu}>
-            <a className={styles.link}> Contact</a>
-          </Link>
-        </div>
+        <Link href="/about" onClick={closeMobileMenu}>
+          <a className={styles.link}> About</a>
+        </Link>
+
+        <Link href="" onClick={closeMobileMenu}>
+          <a className={styles.link}>Services</a>
+        </Link>
+
+        <Link href="/about" onClick={closeMobileMenu}>
+          <a className={styles.link}> Project</a>
+        </Link>
+
+        <Link href="/contact" onClick={closeMobileMenu}>
+          <a className={styles.link}> Contact</a>
+        </Link>
       </div>
     </div>
   );

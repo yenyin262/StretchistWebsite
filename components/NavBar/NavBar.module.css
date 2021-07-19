@@ -4,12 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 40px;
 }
 
 .logo {
-  margin-left: 1rem;
-  width: 180px;
-  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -24,18 +22,24 @@
 }
 .navBarLinks {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.servicesContainer {
+.link {
+  color: var(--color-primary-white);
+  height: 60px;
   display: flex;
   align-items: center;
-  padding: 24px 0;
+  width: 130px;
+  justify-content: center;
 }
-.link {
-  padding: 0rem 2rem;
-  color: #fff;
+
+a.link:hover {
+  background-color: var(--color-primary-maya-blue);
+  border-radius: 50px;
+}
+
+.active_page {
+  background-color: var(--color-primary-white);
 }
 
 @media (max-width: 400px) {
