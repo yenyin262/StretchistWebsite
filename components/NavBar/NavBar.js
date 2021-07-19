@@ -26,9 +26,13 @@ const NavBar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <Link href="/">
-          <Image src={logo} alt="Logo" width={180} height={60} />
-        </Link>
+        <Image
+          src={logo}
+          alt="Logo"
+          layout="responsive"
+          width={180}
+          height={40}
+        />
       </div>
       <div className={styles.togglebtn} onClick={handleClick}>
         <Link href="/">

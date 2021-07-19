@@ -4,24 +4,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  width: 140px;
 }
 
 .togglebtn {
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
+  display: flex;
 }
 .navBarLinks {
-  display: flex;
+  display: none;
 }
 
 .link {
@@ -42,12 +36,20 @@ a.link:hover {
   background-color: var(--color-primary-white);
 }
 
-@media (max-width: 400px) {
+/* desktop */
+@media (min-width: 1024px) {
   .togglebtn {
-    display: flex;
+    display: none;
   }
   .navBarLinks {
-    display: none;
-    width: 100%;
+    display: flex;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .logo {
+    width: 180px;
   }
 }
