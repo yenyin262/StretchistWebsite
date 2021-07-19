@@ -1,0 +1,23 @@
+/* desktop */
+.navBarLinks {
+  display: none;
+}
+
+.link {
+  color: var(--color-primary-white);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  width: 130px;
+  justify-content: center;
+}
+
+a.link:hover {
+  background-color: var(--color-primary-maya-blue);
+  border-radius: 50px;
+}
+@media (min-width: 1024px) {
+  .navBarLinks {
+    display: flex;
+  }
+}

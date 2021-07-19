@@ -14,23 +14,6 @@
 .togglebtn {
   display: flex;
 }
-.navBarLinks {
-  display: none;
-}
-
-.link {
-  color: var(--color-primary-white);
-  height: 60px;
-  display: flex;
-  align-items: center;
-  width: 130px;
-  justify-content: center;
-}
-
-a.link:hover {
-  background-color: var(--color-primary-maya-blue);
-  border-radius: 50px;
-}
 
 .active_page {
   background-color: var(--color-primary-white);
@@ -40,9 +23,6 @@ a.link:hover {
 @media (min-width: 1024px) {
   .togglebtn {
     display: none;
-  }
-  .navBarLinks {
-    display: flex;
   }
 
   .container {

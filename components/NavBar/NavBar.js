@@ -5,6 +5,7 @@ import togglebtn from "../../public/icon-hamburger.svg";
 import Image from "next/image";
 
 import { useState } from "react";
+import NavItems from "../NavItems/NavItems";
 
 const NavBar = () => {
   // set state of the menu icon
@@ -18,10 +19,6 @@ const NavBar = () => {
   const closeMobileMenu = () => {
     setClick(false);
   };
-  // add button
-  //measure size of button
-  //measure distance
-  // hover
 
   return (
     <div className={styles.container}>
@@ -39,23 +36,7 @@ const NavBar = () => {
           <Image src={togglebtn} alt="Menu icon" width={30} height={20} />
         </Link>
       </div>
-      <div className={styles.navBarLinks}>
-        <Link href="/about" onClick={closeMobileMenu}>
-          <a className={styles.link}> About</a>
-        </Link>
-
-        <Link href="" onClick={closeMobileMenu}>
-          <a className={styles.link}>Services</a>
-        </Link>
-
-        <Link href="/about" onClick={closeMobileMenu}>
-          <a className={styles.link}> Project</a>
-        </Link>
-
-        <Link href="/contact" onClick={closeMobileMenu}>
-          <a className={styles.link}> Contact</a>
-        </Link>
-      </div>
+      <NavItems />
     </div>
   );
 };
