@@ -1,0 +1,17 @@
+[
+  {
+    "image": "/mobile/image-transform.jpg",
+    "title": "Transform your mobility",
+
+    "link": "mylink",
+    "order": 1,
+    "content": "Providing a service that speciailizes in helping individuals with movements that target muscles and connective tissues around the joints.."
+  },
+  {
+    "image": "/mobile/image-transform.jpg",
+    "title": "Transform your core",
+    "link": "mylink",
+    "order": 2,
+    "content": "Here to improve sports performance, increase range of motion & flexibility, reduce muscle & joint pain, prevent injuries, improve posture, and increase relaxation and decrease stress."
+  }
+]

@@ -1,0 +1,45 @@
+.container {
+  height: 80px;
+  background: var(--color-primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.togglebtn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navBarLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicesContainer {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+.link {
+  padding: 0rem 2rem;
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  .togglebtn {
+    display: flex;
+  }
+  .navBarLinks {
+    display: none;
+    width: 100%;
+  }
+}
