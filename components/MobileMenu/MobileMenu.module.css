@@ -1,0 +1,42 @@
+.container_mobileMenu {
+  background: var(--color-primary-white);
+  padding: 40px 95px;
+  width: 325px;
+  position: absolute;
+  top: 113px;
+  right: 26px;
+  color: black;
+  z-index: 1;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+}
+
+.container_mobileMenu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 94.8%;
+  width: 0;
+  height: 0;
+  border: 33px solid transparent;
+  border-bottom-color: var(--color-primary-white);
+  border-top: 0;
+  border-right: 0;
+  margin-left: -16.5px;
+  margin-top: -33px;
+}
+
+.link {
+  color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.link:hover {
+  background-color: var(--color-primary-yellow-);
+  border-radius: 50px;
+}
