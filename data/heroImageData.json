@@ -1,0 +1,7 @@
+{
+  "images": {
+    "mobile": "/mobile/image-header.jpg",
+    "desktop": "/desktop/image-header.jpg"
+  },
+  "title": "hero-banner"
+}
