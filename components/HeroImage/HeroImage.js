@@ -20,8 +20,10 @@ const HeroImage = ({ children }) => {
 
       <div className={classnames(`heroImage`, styles.container)}>
         {children}
-        <div>We are creatives</div>
-        <HeroArrow />
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>We are creatives</h1>
+          <HeroArrow />
+        </div>
       </div>
     </>
   );

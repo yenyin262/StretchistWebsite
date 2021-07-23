@@ -1,7 +1,18 @@
 .heroArrowImg {
-  width: 35px;
-  height: 115px;
-  position: absolute;
-  right: 170px;
-  top: 409px;
+  /* width: 35px;
+  height: 115px; */
+  /* position: absolute;
+    left: 50%;
+    top: 48%; */
+}
+
+@media (min-width: 400px) {
+  .heroArrowImg {
+    /* width: 35px;
+    height: 115px;
+    position: absolute; */
+    /* transform: translate(-50%, 50%);
+    left: 50%;
+    top: 48%; */
+  }
 }

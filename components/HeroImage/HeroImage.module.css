@@ -3,4 +3,43 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.heroTitle {
+  text-transform: uppercase;
+  /* position: absolute; */
+
+  /* top: 175px;
+  left: 50%; */
+  text-align: center;
+  /* transform: translateX(-50%); */
+  font-size: 35px;
+  color: white;
+  font-family: "Fraunces";
+  font-weight: 800;
+  letter-spacing: 10px;
+  padding-bottom: 100px;
+}
+
+.heroContent {
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+@media (min-width: 400px) {
+  .heroTitle {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 45px;
+    letter-spacing: 20px;
+  }
 }
