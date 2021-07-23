@@ -1,10 +1,16 @@
 import { useState, useRef, useEffect } from "react";
 
+// creating a hook component
+
 function useMobilenavmenu(initialMenu) {
   const [mobileNavmenu, setMobileNavmenu] = useState(initialMenu);
 
+  //   // 1. useRef() hook allows to access Dom
+  //   // initialize and assign variable to use Ref
+  //   // reference it to outer div
   const ref = useRef(null);
 
+  //   3. create function to click on menu icon
   const handleClickOutside = (e) => {
     if (ref && ref.current && ref.current.contains(e.target)) {
       // inside click

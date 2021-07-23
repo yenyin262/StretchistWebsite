@@ -1,13 +1,13 @@
 .container {
-  background-image: url("../../public/mobile/image-header.jpg");
-  height: 535px;
+  /* background-image: url("../../public/mobile/image-header.jpg");
+  height: 535px; */
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding: 30px 20px 0px;
   position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
 }
 
 .logo {
@@ -29,17 +29,27 @@
   background: none;
 }
 
+/* @media (min-width: 400px) {
+  .container {
+    background-image: url("../../public/desktop/image-header.jpg");
+    background-position: bottom;
+  }
+} */
 /* desktop */
 @media (min-width: 1024px) {
   .togglebtn {
     display: none;
   }
-
+  /* 
   .container {
-    padding: 0 40px;
+    padding: 20px 40px 0px;
+  } */
+  .container {
+    padding: 20px 40px;
   }
 
   .logo {
     width: 180px;
+    align-self: center;
   }
 }

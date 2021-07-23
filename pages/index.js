@@ -4,16 +4,19 @@ import NavBar from "../components/NavBar/NavBar";
 
 import Image from "next/image";
 import { getAllSections, getJSONSections } from "../lib/sections";
+import HeroImage from "../components/HeroImage/HeroImage";
+import heroArrow from "../components/heroArrow/heroArrow";
 
 const Home = ({ sections }) => {
   return (
     <>
-      <NavBar />
-
       <div>
+        <HeroImage>
+          <NavBar />
+        </HeroImage>
         JSON
-        {sections.map((section) => (
-          <div>
+        {sections.map((section, index) => (
+          <div key={index}>
             <Image src={section.image} alt="dd" width={500} height={500} />
             <div>{section.title}</div>
             <div>{section.content}</div>
