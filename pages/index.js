@@ -12,6 +12,7 @@ import {
 } from "../lib/sections";
 import HeroImage from "../components/HeroImage/HeroImage";
 import styles from "./index.module.css";
+import MainSection from "../components/MainSection/MainSection";
 
 const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
   return (
@@ -22,54 +23,7 @@ const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
         </HeroImage>
         <div>
           {sections.map((section, index) => (
-            <>
-              <style jsx>{`
-                @media (max-width: 400px) {
-                  a {
-                    padding: 30px 0 8px;
-                    position: relative;
-                  }
-
-                  a::before {
-                    content: "";
-                    position: absolute;
-                    left: 65px;
-                    bottom: 10px;
-                    width: 130px;
-                    height: 7px;
-                    transform: skew(-12deg) translateX(-50%);
-                    background: ${section.linkColor};
-                    z-index: -1;
-                  }
-                }
-
-                @media (min-width: 400px) {
-                  .detailsblk {
-                  }
-                }
-              `}</style>
-              <div key={index} className={styles.content1_container}>
-                {/* <div className={styles.content1Item}> */}
-                <div className={styles.content1_imgContainer}>
-                  <Image
-                    src={section.image}
-                    alt="dd"
-                    width={370}
-                    height={370}
-                  />
-                </div>
-                <div className={styles.mainContent_block}>
-                  <div className={styles.title}>{section.title}</div>
-                  <div className={styles.content}>{section.content}</div>
-                  <div className={styles.content_btn}>
-                    <Link href="/about">
-                      <a>{section.details}</a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              {/* </div> */}
-            </>
+            <MainSection data={section} key={index} />
           ))}
         </div>
 
