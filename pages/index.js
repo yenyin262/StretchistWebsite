@@ -1,8 +1,7 @@
-// import Head from "/next/head";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import classnames from "classnames";
-import Link from "next/link";
+
 import Image from "next/image";
 import {
   getJSONSections,
@@ -14,6 +13,7 @@ import HeroImage from "../components/HeroImage/HeroImage";
 import styles from "./index.module.css";
 import MainSection from "../components/MainSection/MainSection";
 import TestimonialItem from "../components/TestimonialItem/TestimonialItem";
+import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 
 const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
   return (
@@ -59,12 +59,7 @@ const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
           ))}
         </div>
 
-        <h3 className={styles.testimonialHeading}>Client Testimonial</h3>
-        <div className={styles.testimonialContent_blk}>
-          {testimonials.map((testimonial, index) => {
-            return <TestimonialItem data={testimonial} key={index} />;
-          })}
-        </div>
+        <TestimonialSection testimonials={testimonials} />
         <div className={styles.imgCollageContainer}>
           {imgCollages.map((imgCollage, index) => {
             return (

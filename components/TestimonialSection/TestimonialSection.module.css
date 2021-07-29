@@ -1,0 +1,24 @@
+.container {
+  padding: 60px 0px 0px;
+}
+
+.testimonialContent_blk {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonialHeading {
+  text-align: center;
+  font-family: Fraunces;
+  color: var(--color-neutral-greyblue);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+@media (min-width: 1024px) {
+  .testimonialContent_blk {
+    flex-direction: row;
+  }
+}
