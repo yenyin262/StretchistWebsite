@@ -1,3 +1,7 @@
 {
-  "extends": ["next", "next/core-web-vitals"]
+  "extends": [
+    "import",
+    "next",
+    "next/core-web-vitals"
+  ]
 }
