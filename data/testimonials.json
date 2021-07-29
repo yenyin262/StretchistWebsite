@@ -1,22 +1,22 @@
 [
   {
-    "image": "/assets/blog/dynamic-routing/cover.jpg",
-    "description": "Good",
-    "name": "mylink",
+    "image": "/image-emily.jpg",
+    "content": "We put our trust on Sketchist, they delivered and I on my way to reaching my fitness goal ",
+    "name": "jas",
     "position": "engineer",
     "order": 1
   },
   {
-    "image": "/assets/blog/dynamic-routing/cover.jpg",
-    "description": "Perfect",
-    "name": "mylink",
+    "image": "/image-jennie.jpg",
+    "content": "Incredible end result! I am now able to stretch like no other",
+    "name": "jas",
     "position": "engineer",
     "order": 2
   },
   {
-    "image": "/assets/blog/dynamic-routing/cover.jpg",
-    "description": " I am transformed",
-    "name": "mylink",
+    "image": "/image-thomas.jpg",
+    "content": "“This technique was surprisingly effective! I saw immediate results in my posture, and release of stress and tension in my neck, shoulders, and back. Gaby is extremely intuitive and body aware. Thanks Gaby!”",
+    "name": "Raymond",
     "position": "engineer",
     "order": 3
   }
