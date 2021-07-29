@@ -16,67 +16,63 @@ import TestimonialSection from "../components/TestimonialSection/TestimonialSect
 
 const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
   return (
-    <>
+    <div className={styles.homeContainer}>
+      <HeroImage>
+        <NavBar />
+      </HeroImage>
       <div>
-        <HeroImage>
-          <NavBar />
-        </HeroImage>
-        <div>
-          {sections.map((section, index) => (
-            <MainSection data={section} key={index} />
-          ))}
-        </div>
+        {sections.map((section, index) => (
+          <MainSection data={section} key={index} />
+        ))}
+      </div>
 
-        <div className={styles.content2_blk}>
-          {secondarySections.map((secondarySection, index) => (
-            <>
-              <style jsx>{`
-                @media (max-width: 400px) {
-                  .img {
-                    background-image: url("${secondarySection.mobileImage}");
-                  }
+      <div className={styles.content2_blk}>
+        {secondarySections.map((secondarySection, index) => (
+          <>
+            <style jsx>{`
+              @media (max-width: 400px) {
+                .img {
+                  background-image: url("${secondarySection.mobileImage}");
                 }
+              }
 
-                @media (min-width: 400px) {
-                  .img {
-                    background-image: url("${secondarySection.desktopImage}");
-                  }
+              @media (min-width: 400px) {
+                .img {
+                  background-image: url("${secondarySection.desktopImage}");
                 }
-              `}</style>
-              <div
+              }
+            `}</style>
+            <div
+              key={index}
+              className={classnames(`img`, styles.secondaryContent_blk)}
+            >
+              <div className={styles.secondary_mainContent_block}>
+                <div className={styles.title}>{secondarySection.title}</div>
+                <div className={styles.content}>{secondarySection.content}</div>
+              </div>
+            </div>
+          </>
+        ))}
+      </div>
+
+      <TestimonialSection testimonials={testimonials} />
+      <div className={styles.imgCollageContainer}>
+        {imgCollages.map((imgCollage, index) => {
+          return (
+            <div className={styles.imageCollage}>
+              <Image
                 key={index}
-                className={classnames(`img`, styles.secondaryContent_blk)}
-              >
-                <div className={styles.secondary_mainContent_block}>
-                  <div className={styles.title}>{secondarySection.title}</div>
-                  <div className={styles.content}>
-                    {secondarySection.content}
-                  </div>
-                </div>
-              </div>
-            </>
-          ))}
-        </div>
-
-        <TestimonialSection testimonials={testimonials} />
-        <div className={styles.imgCollageContainer}>
-          {imgCollages.map((imgCollage, index) => {
-            return (
-              <div className={styles.imageCollage}>
-                <Image
-                  key={index}
-                  src={imgCollage.mobile}
-                  width={187}
-                  height={210}
-                  layout="responsive"
-                />
-              </div>
-            );
-          })}
-        </div>
+                src={imgCollage.mobile}
+                width={187}
+                height={210}
+                layout="responsive"
+              />
+            </div>
+          );
+        })}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

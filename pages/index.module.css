@@ -1,4 +1,9 @@
-.title {
+.homeContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* .title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -96,5 +101,44 @@
   .testimonialContent_blk {
     display: flex;
     justify-content: space-around;
+  }
+} */
+
+.secondaryContent_blk {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 635px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.secondary_mainContent_block {
+  padding: 100px 20px 0px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  font-family: Fraunces;
+  font-weight: 700;
+}
+
+.content {
+  font-family: barlow;
+  font-weight: 400;
+  padding: 35px 0px;
+  line-height: 25px;
+  text-align: center;
+}
+.imgCollageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+@media (min-width: 1024px) {
+  .content2_blk {
+    display: flex;
   }
 }
