@@ -1,0 +1,28 @@
+.link {
+  color: var(--color-primary-moderate-cyan);
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Barlow";
+  font-size: 16px;
+}
+
+a.link {
+  font-weight: 600;
+}
+
+/* a.link:hover {
+  background-color: var(--color-primary-maya-blue);
+  border-radius: 50px;
+} */
+
+/* @media (min-width: 1024px) {
+  .navBarLinks {
+    display: flex;
+  }
+}  */
+
+.navBarLinks {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 60px;
+}

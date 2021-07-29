@@ -1,8 +1,11 @@
 .footer {
-  background: var(--color-primary-yellow);
-  color: #fff;
-  height: 200px;
+  background-color: #8fd4c5;
+  padding: 60px 15px;
+  width: 100%;
+}
+
+.logo {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
 }
