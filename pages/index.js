@@ -13,6 +13,7 @@ import {
 import HeroImage from "../components/HeroImage/HeroImage";
 import styles from "./index.module.css";
 import MainSection from "../components/MainSection/MainSection";
+import TestimonialItem from "../components/TestimonialItem/TestimonialItem";
 
 const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
   return (
@@ -61,24 +62,7 @@ const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
         <h3 className={styles.testimonialHeading}>Client Testimonial</h3>
         <div className={styles.testimonialContent_blk}>
           {testimonials.map((testimonial, index) => {
-            return (
-              <div key={index} className={styles.testimonialItemContainer}>
-                <div>
-                  <Image
-                    className={styles.testimonialImg}
-                    src={testimonial.image}
-                    width={80}
-                    height={80}
-                  />
-                </div>
-
-                <div className={styles.testimonialContent}>
-                  {testimonial.content}
-                </div>
-                <div className={styles.name}>{testimonial.name}</div>
-                <div className={styles.position}>{testimonial.position}</div>
-              </div>
-            );
+            return <TestimonialItem data={testimonial} key={index} />;
           })}
         </div>
         <div className={styles.imgCollageContainer}>
