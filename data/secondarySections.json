@@ -1,14 +1,16 @@
 [
   {
     "title": "Upcoming Events",
-    "image": "/assets/blog/dynamic-routing/cover.jpg",
+    "mobileImage": "/mobile/image-graphic-design.jpg",
+    "desktopImage": "/desktop/image-graphic-design.jpg",
     "link": "mylink",
     "order": 1,
     "content": "Providing a service that speciailizes in helping individuals with movements that target muscles and connective tissues around the joints.."
   },
   {
     "title": "Community Work",
-    "image": "/assets/blog/dynamic-routing/cover.jpg",
+    "mobileImage": "/mobile/image-photography.jpg",
+    "desktopImage": "/desktop/image-photography.jpg",
     "link": "mylink",
     "order": 2,
     "content": "From time to time we contribute to the community by providing stretching demonstration to highlight the advantages it has to our health."
