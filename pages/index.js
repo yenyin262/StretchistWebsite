@@ -12,7 +12,6 @@ import {
 import HeroImage from "../components/HeroImage/HeroImage";
 import styles from "./index.module.css";
 import MainSection from "../components/MainSection/MainSection";
-import TestimonialItem from "../components/TestimonialItem/TestimonialItem";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 
 const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
