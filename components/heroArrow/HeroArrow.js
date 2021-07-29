@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./heroArrow.module.css";
 const HeroArrow = () => {
   return (
