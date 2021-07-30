@@ -6,12 +6,10 @@ import Image from "next/image";
 import NavItems from "../NavItems/NavItems";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import useMobilenavmenu from "./useMobilenavmenu";
-import HeroImage from "../HeroImage/HeroImage";
 
 const NavBar = () => {
   const { ref, mobileNavmenu, setMobileNavmenu } = useMobilenavmenu(false);
 
-  // test the bug on the onlcick fn
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
