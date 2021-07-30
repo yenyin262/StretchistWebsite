@@ -6,15 +6,14 @@ import Icons from "../Icons/Icons";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.logo}>
-        <Logo />
-      </div>
-      <div>
+      <div className={styles.footerContent}>
+        <div className={styles.logo}>
+          <Logo />
+        </div>
         <FooterNavItems />
-      </div>
-      <div className={styles.socialMediaIcons}>
-        {" "}
-        <Icons />{" "}
+        <div className={styles.socialMediaIcons}>
+          <Icons />
+        </div>
       </div>
     </div>
   );

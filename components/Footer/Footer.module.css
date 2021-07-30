@@ -3,7 +3,10 @@
   padding: 60px 15px;
   width: 100%;
 }
-
+.footerContent {
+  max-width: 345px;
+  margin: 0 auto;
+}
 .logo {
   display: flex;
   justify-content: center;
