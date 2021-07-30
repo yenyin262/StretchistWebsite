@@ -24,15 +24,27 @@
 .testimonialContent {
   padding: 40px 0px;
   text-align: center;
+  font-weight: 400;
+  font-weight: 500;
+  color: var(--color-neutral-desaturated-darkblue);
 }
 
 .name {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.name,
+.position {
   text-align: center;
+  text-transform: capitalize;
+  font-family: barlow;
+  font-weight: 500;
 }
 
 .position {
-  padding-top: 30px;
-  text-align: center;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--color-neutral-greyblue);
 }
 
 @media (min-width: 500px) {

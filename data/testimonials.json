@@ -2,8 +2,8 @@
   {
     "image": "/image-emily.jpg",
     "content": "We put our trust on Sketchist, they delivered and I on my way to reaching my fitness goal ",
-    "name": "jas",
-    "position": "engineer",
+    "name": "Shannon",
+    "position": "Physiotherapist",
     "order": 1
   },
   {
@@ -17,7 +17,7 @@
     "image": "/image-thomas.jpg",
     "content": "“This technique was surprisingly effective! I saw immediate results in my posture, and release of stress and tension in my neck, shoulders, and back. Gaby is extremely intuitive and body aware. Thanks Gaby!”",
     "name": "Raymond",
-    "position": "engineer",
+    "position": "Business Owner",
     "order": 3
   }
 ]
