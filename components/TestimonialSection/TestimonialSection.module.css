@@ -12,9 +12,9 @@
 .testimonialHeading {
   text-align: center;
   font-family: Fraunces;
-  color: var(--color-neutral-greyblue);
+  color: var(--color-neutral-darkgreyblue);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 5px;
   text-transform: uppercase;
 }

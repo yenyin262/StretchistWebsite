@@ -30,21 +30,21 @@
 }
 
 .name {
-  margin-bottom: 20px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 .name,
 .position {
   text-align: center;
   text-transform: capitalize;
   font-family: barlow;
-  font-weight: 500;
 }
 
 .position {
   font-size: 14px;
   text-transform: capitalize;
   color: var(--color-neutral-greyblue);
+  font-weight: 500;
 }
 
 @media (min-width: 500px) {
