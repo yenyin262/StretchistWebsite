@@ -13,8 +13,9 @@ import HeroImage from "../components/HeroImage/HeroImage";
 import styles from "./index.module.css";
 import MainSection from "../components/MainSection/MainSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
+import SocialSection from "../components/SocialSection/SocialSection";
 
-const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
+const Home = ({ sections, socialSections, testimonials, imgCollages }) => {
   return (
     <div className={styles.homeContainer}>
       <HeroImage>
@@ -26,34 +27,7 @@ const Home = ({ sections, secondarySections, testimonials, imgCollages }) => {
         ))}
       </div>
 
-      <div className={styles.content2_blk}>
-        {secondarySections.map((secondarySection, index) => (
-          <>
-            <style jsx>{`
-              @media (max-width: 400px) {
-                .img {
-                  background-image: url("${secondarySection.mobileImage}");
-                }
-              }
-
-              @media (min-width: 400px) {
-                .img {
-                  background-image: url("${secondarySection.desktopImage}");
-                }
-              }
-            `}</style>
-            <div
-              key={index}
-              className={classnames(`img`, styles.secondaryContent_blk)}
-            >
-              <div className={styles.secondary_mainContent_block}>
-                <div className={styles.title}>{secondarySection.title}</div>
-                <div className={styles.content}>{secondarySection.content}</div>
-              </div>
-            </div>
-          </>
-        ))}
-      </div>
+      <SocialSection socialSections={socialSections} />
 
       <TestimonialSection testimonials={testimonials} />
       <div className={styles.imgCollageContainer}>
@@ -82,13 +56,13 @@ export async function getStaticProps() {
   const sections = getJSONSections();
   // geet secondary section
   // get testimonial
-  const secondarySections = getJSONSecondarySections();
+  const socialSections = getJSONSecondarySections();
   const testimonials = getJSONtestimonials();
 
   const imgCollages = getImageCollage();
   console.log(sections);
 
   return {
-    props: { sections, secondarySections, testimonials, imgCollages },
+    props: { sections, socialSections, testimonials, imgCollages },
   };
 }
