@@ -12,15 +12,17 @@ const MainSection = ({ data }) => {
         }
 
         a::before {
+          border-radius: 25px;
           content: "";
           position: absolute;
           left: 65px;
-          bottom: 10px;
+          bottom: 7px;
           width: 145px;
           height: 8px;
-          transform: skew(-12deg) translateX(-50%);
-          background: ${data.linkColor};
+          transform: translateX(-50%);
           z-index: -1;
+          opacity: 0.5;
+          background: ${data.linkColor};
         }
       `}</style>
       <div className={styles.content_container}>
