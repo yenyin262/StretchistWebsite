@@ -14,6 +14,8 @@ import styles from "./index.module.css";
 import MainSection from "../components/MainSection/MainSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import SocialSection from "../components/SocialSection/SocialSection";
+import ImgItem from "../components/ImgItem/ImgItem";
+import ImgCollageSection from "../components/ImgCollageSection/ImgCollageSection";
 
 const Home = ({ sections, socialSections, testimonials, imgCollages }) => {
   return (
@@ -30,21 +32,7 @@ const Home = ({ sections, socialSections, testimonials, imgCollages }) => {
       <SocialSection socialSections={socialSections} />
 
       <TestimonialSection testimonials={testimonials} />
-      <div className={styles.imgCollageContainer}>
-        {imgCollages.map((imgCollage, index) => {
-          return (
-            <div className={styles.imageCollage}>
-              <Image
-                key={index}
-                src={imgCollage.mobile}
-                width={187}
-                height={210}
-                layout="responsive"
-              />
-            </div>
-          );
-        })}
-      </div>
+      <ImgCollageSection imgCollages={imgCollages} />
       <Footer />
     </div>
   );
