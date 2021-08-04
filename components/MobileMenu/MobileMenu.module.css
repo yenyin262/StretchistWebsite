@@ -4,8 +4,7 @@
   width: 325px;
   position: absolute;
   top: 113px;
-  /* right: 26px; */
-  right: 10px;
+  right: 26px;
   color: black;
   z-index: 1;
   display: flex;

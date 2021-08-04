@@ -2,7 +2,7 @@
   /* background-image: url("../../public/mobile/image-header.jpg");
   height: 535px; */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   padding: 30px 20px 0px;
   position: relative;
@@ -14,12 +14,6 @@
   width: 140px;
 }
 
-.togglebtn {
-  position: absolute;
-  right: 20px;
-  display: flex;
-}
-
 .active_page {
   background-color: var(--color-primary-white);
 }
@@ -27,6 +21,8 @@
 .btn_menu {
   border: none;
   background: none;
+  display: flex;
+  align-items: center;
 }
 
 /* @media (min-width: 400px) {
@@ -37,7 +33,7 @@
 } */
 /* desktop */
 @media (min-width: 1024px) {
-  .togglebtn {
+  .btn_menu {
     display: none;
   }
   /* 
