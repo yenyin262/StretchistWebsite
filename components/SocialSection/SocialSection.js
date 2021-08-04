@@ -3,7 +3,7 @@ import SocialSectionItem from "../SocialSectionItem/SocialSectionItem";
 
 const SocialSection = ({ socialSections }) => {
   return (
-    <div className={styles.socialsection}>
+    <div className={styles["social-section"]}>
       {socialSections.map((socialSection, index) => (
         <SocialSectionItem data={socialSection} key={index} />
       ))}
