@@ -14,7 +14,6 @@ import styles from "./index.module.css";
 import MainSection from "../components/MainSection/MainSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import SocialSection from "../components/SocialSection/SocialSection";
-import ImgItem from "../components/ImgItem/ImgItem";
 import ImgCollageSection from "../components/ImgCollageSection/ImgCollageSection";
 
 const Home = ({ sections, socialSections, testimonials, imgCollages }) => {
