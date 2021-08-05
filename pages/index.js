@@ -1,11 +1,8 @@
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
-import classnames from "classnames";
-
-import Image from "next/image";
 import {
   getJSONSections,
-  getJSONSecondarySections,
+  getJSONSocialSections,
   getJSONtestimonials,
   getImageCollage,
 } from "../lib/sections";
@@ -41,9 +38,7 @@ export default Home;
 
 export async function getStaticProps() {
   const sections = getJSONSections();
-  // geet secondary section
-  // get testimonial
-  const socialSections = getJSONSecondarySections();
+  const socialSections = getJSONSocialSections();
   const testimonials = getJSONtestimonials();
 
   const imgCollages = getImageCollage();
