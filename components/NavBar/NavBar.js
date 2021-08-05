@@ -11,8 +11,8 @@ const NavBar = () => {
   const { ref, mobileNavmenu, setMobileNavmenu } = useMobilenavmenu(false);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.logo}>
+    <div className={styles["main-nav"]}>
+      <div className={styles["main-nav__logo"]}>
         <Link href="/">
           <Image
             src={logo}
@@ -21,11 +21,20 @@ const NavBar = () => {
             width={180}
             height={40}
           />
+          {/* 
+          <Image
+            src="/TheStretchistLogo.png"
+            alt="Logo"
+            layout="responsive"
+            width={700}
+            height={378}
+            color={"black"}
+          /> */}
         </Link>
       </div>
       <div ref={ref}>
         <button
-          className={styles.btn_menu}
+          className={styles.togglebutton}
           onClick={() => setMobileNavmenu(!mobileNavmenu)}
         >
           <ToggleButton />
