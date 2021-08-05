@@ -1,4 +1,4 @@
-.link {
+.footer-nav__link {
   color: var(--color-primary-moderate-cyan);
   display: flex;
   justify-content: space-evenly;
@@ -6,22 +6,11 @@
   font-size: 16px;
 }
 
-a.link {
+a.footer-nav__link {
   font-weight: 600;
 }
 
-/* a.link:hover {
-  background-color: var(--color-primary-maya-blue);
-  border-radius: 50px;
-} */
-
-/* @media (min-width: 1024px) {
-  .navBarLinks {
-    display: flex;
-  }
-}  */
-
-.navBarLinks {
+.footer-nav__list {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 60px;
