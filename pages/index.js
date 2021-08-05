@@ -15,7 +15,7 @@ import ImgCollageSection from "../components/ImgCollageSection/ImgCollageSection
 
 const Home = ({ sections, socialSections, testimonials, imgCollages }) => {
   return (
-    <div className={styles.homeContainer}>
+    <div className={styles.home}>
       <HeroImage>
         <NavBar />
       </HeroImage>
