@@ -3,19 +3,19 @@ import styles from "./TestimonialItem.module.css";
 
 const TestimonialItem = ({ data }) => {
   return (
-    <div className={styles.testimonialItemContainer}>
+    <div className={styles.testimonial__item}>
       <div>
         <Image
-          className={styles.testimonialImg}
+          className={styles.testimonial__img}
           src={data.image}
           width={80}
           height={80}
         />
       </div>
 
-      <div className={styles.testimonialContent}>{data.content}</div>
-      <div className={styles.name}>{data.name}</div>
-      <div className={styles.position}>{data.position}</div>
+      <div className={styles.testimonial__item__content}>{data.content}</div>
+      <div className={styles.testimonial__item__name}>{data.name}</div>
+      <div className={styles.testimonial__item__position}>{data.position}</div>
     </div>
   );
 };
