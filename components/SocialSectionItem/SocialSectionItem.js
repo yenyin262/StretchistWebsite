@@ -17,8 +17,8 @@ const SocialSectionItem = ({ data }) => {
           }
         }
       `}</style>
-      <div className={classnames(`img`, styles.item_container)}>
-        <div className={styles.item__list}>
+      <div className={classnames(`img`, styles.item)}>
+        <div className={styles.item__body}>
           <div className={styles.item__title}>{data.title}</div>
           <div className={styles.item__content}>{data.content}</div>
         </div>
