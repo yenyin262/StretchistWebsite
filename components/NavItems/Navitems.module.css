@@ -1,9 +1,9 @@
 /* desktop */
-.navBarLinks {
+.main-nav__list {
   display: none;
 }
 
-.link {
+.main-nav__link {
   color: var(--color-primary-white);
   height: 60px;
   display: flex;
@@ -14,13 +14,13 @@
   font-size: 20px;
 }
 
-a.link:hover {
+a.main-nav__link:hover {
   background-color: var(--color-primary-maya-blue);
   border-radius: 50px;
 }
 
 @media (min-width: 1024px) {
-  .navBarLinks {
+  .main-nav__list {
     display: flex;
   }
 }

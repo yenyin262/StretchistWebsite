@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const NavItems = () => {
   return (
-    <div className={styles.navBarLinks}>
+    <div className={styles["main-nav__list"]}>
       {items.map((item, index) => {
         return (
           <Link href={item.link} key={index}>
-            <a className={styles.link}> {item.title}</a>
+            <a className={styles["main-nav__link"]}> {item.title}</a>
           </Link>
         );
       })}
