@@ -1,4 +1,4 @@
-.container_mobileMenu {
+.mobilemenu__nav {
   background: var(--color-primary-white);
   padding: 40px 95px;
   width: 325px;
@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 
-.container_mobileMenu::after {
+.mobilemenu__nav::after {
   content: "";
   position: absolute;
   top: 0;
@@ -28,7 +28,7 @@
   margin-top: -33px;
 }
 
-.link {
+.mobilemenu__nav__link {
   color: black;
   height: 60px;
   display: flex;
@@ -37,7 +37,7 @@
   font-family: "Barlow";
 }
 
-a.link:hover {
+a.mobilemenu__nav__link:hover {
   background-color: var(--color-primary-yellow-);
   border-radius: 50px;
 }

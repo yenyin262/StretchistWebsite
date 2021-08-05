@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const MobileMenu = () => {
   return (
-    <div className={styles.container_mobileMenu}>
-      <div className={`${[styles.navBarLinks]}`}>
+    <div className={styles.mobilemenu__nav}>
+      <div>
         {items.map((item, index) => {
           return (
             <Link href={item.link} key={index}>
-              <a className={styles.link}> {item.title}</a>
+              <a className={styles.mobilemenu__nav__link}> {item.title}</a>
             </Link>
           );
         })}
