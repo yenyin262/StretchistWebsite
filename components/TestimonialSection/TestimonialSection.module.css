@@ -1,15 +1,15 @@
-.container {
+.testimonial {
   padding: 60px 0px 0px;
 }
 
-.testimonialContent_blk {
+.testimonial__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.testimonialHeading {
+.testimonial__heading {
   text-align: center;
   font-family: Fraunces;
   color: var(--color-neutral-darkgreyblue);
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: 1024px) {
-  .testimonialContent_blk {
+  .testimonial__list {
     flex-direction: row;
     align-items: baseline;
   }
