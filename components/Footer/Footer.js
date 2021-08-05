@@ -1,18 +1,17 @@
 import styles from "./Footer.module.css";
 import Logo from "../Logo";
 import FooterNavItems from "../FooterNavItems/FooterNavItems";
-import Image from "next/image";
 
 import Icons from "../Icons/Icons";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.footerContent}>
-        <div className={styles.logo}>
+      <div className={styles.footer__content}>
+        <div className={styles.footer__logo}>
           <Logo />
         </div>
         <FooterNavItems />
-        <div className={styles.socialMediaIcons}>
+        <div>
           <Icons />
         </div>
       </div>

@@ -3,12 +3,13 @@
   padding: 60px 15px;
   width: 100%;
 }
-.footerContent {
+.footer__content {
   max-width: 345px;
   margin: 0 auto;
 }
-.logo {
+.footer__logo {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
+  /* width: 250px; */
 }
