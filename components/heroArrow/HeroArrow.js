@@ -1,13 +1,7 @@
-import styles from "./heroArrow.module.css";
 const HeroArrow = () => {
   return (
     <>
-      <svg
-        width="36"
-        height="114"
-        xmlns="http://www.w3.org/2000/svg"
-        className={styles.heroArrowImg}
-      >
+      <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg">
         <g
           stroke="#FFF"
           strokeWidth="6"
