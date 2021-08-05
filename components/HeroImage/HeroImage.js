@@ -1,7 +1,7 @@
 import styles from "./HeroImage.module.css";
 import heroImagedata from "../../data/heroImageData.json";
 import classnames from "classnames";
-import HeroArrow from "../heroArrow/heroArrow";
+import HeroArrow from "../HeroArrow/HeroArrow";
 const HeroImage = ({ children }) => {
   return (
     <>
@@ -18,10 +18,10 @@ const HeroImage = ({ children }) => {
         }
       `}</style>
 
-      <div className={classnames(`heroImage`, styles.container)}>
+      <div className={classnames(`heroImage`, styles.hero)}>
         {children}
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>We are creatives</h1>
+        <div className={styles.hero__content}>
+          <h1 className={styles.hero__content_title}>We are creatives</h1>
           <HeroArrow />
         </div>
       </div>
