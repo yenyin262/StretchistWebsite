@@ -4,7 +4,7 @@ import Facebook from "../Facebook";
 import Twitter from "../Twitter";
 import Pinterest from "../Pinterest";
 import Instagram from "../Instagram";
-import Logo from "../Logo";
+import styles from "./Icons.module.css";
 // create an object
 const ICONS = {
   facebook: <Facebook />,
@@ -15,13 +15,7 @@ const ICONS = {
 
 const Icons = ({}) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        margin: "0px 100px ",
-      }}
-    >
+    <div className={styles.icon}>
       {socialMediaIcons.map((icon, index) => {
         const IconComponent = ICONS[icon.type];
         return (
