@@ -25,8 +25,8 @@ const MainSection = ({ data }) => {
           background: ${data.linkColor};
         }
       `}</style>
-      <div className={styles.content_container}>
-        <div className={styles.imgContainer}>
+      <div className={styles["main-section"]}>
+        <div className={styles["main-section__img-card"]}>
           <Image
             src={data.image}
             alt={data.altDescription}
@@ -36,11 +36,13 @@ const MainSection = ({ data }) => {
           />
         </div>
 
-        <div className={styles.mainContent_block}>
-          <div className={styles.contentItem}>
-            <div className={styles.title}>{data.title}</div>
-            <div className={styles.content}>{data.content}</div>
-            <div className={styles.content_btn}>
+        <div className={styles["main-section__description-card"]}>
+          <div className={styles["main-section__body"]}>
+            <div className={styles["main-section__title"]}>{data.title}</div>
+            <div className={styles["main-section__content"]}>
+              {data.content}
+            </div>
+            <div className={styles["main-section__button"]}>
               <Link href="/about">
                 <a>{data.details}</a>
               </Link>
