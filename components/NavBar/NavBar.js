@@ -40,11 +40,7 @@ const NavBar = () => {
           <ToggleButton />
         </button>
 
-        {mobileNavmenu && (
-          <div>
-            <MobileMenu />
-          </div>
-        )}
+        {mobileNavmenu && <MobileMenu />}
       </div>
 
       <NavItems />
