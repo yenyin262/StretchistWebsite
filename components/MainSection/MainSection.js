@@ -43,7 +43,7 @@ const MainSection = ({ data }) => {
               {data.content}
             </div>
             <div className={styles["main-section__button"]}>
-              <Link href="/about">
+              <Link href={data.link}>
                 <a>{data.details}</a>
               </Link>
             </div>
