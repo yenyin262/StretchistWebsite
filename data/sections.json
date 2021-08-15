@@ -2,9 +2,9 @@
   {
     "image": "/mobile/image-transform.jpg",
     "title": "What is Assisted Stretch Therapy?",
-    "link": "mylink",
+    "link": "./whystretch",
     "order": 1,
-    "content": "Providing a service that speciailizes in helping individuals with movements that target muscles and connective tissues around the joints..",
+    "content": "Assisted Stretch Therapy focuses on helping individuals work on their range of motion resulting in improved performance and reduce risk of injury. Our techniques are able to assist those who are experiencing tight muscles and restricted joints.",
     "details": "LEARN MORE",
     "linkColor": "#FFD101",
     "altDescription": "Egg"
@@ -12,9 +12,9 @@
   {
     "image": "/mobile/image-stand-out.jpg",
     "title": "Our Story ",
-    "link": "mylink",
+    "link": "/about",
     "order": 2,
-    "content": "Here to improve sports performance, increase range of motion & flexibility, reduce muscle & joint pain, prevent injuries, improve posture, and increase relaxation and decrease stress.",
+    "content": "Like any other human being - we are all suspectible to the wear and tear of life when we find ourselves too busy to give the attention our body needs. Stretchist was formed to serve the local community and provide a carefree stretch experience - one that is deep & enriching. ",
     "details": "LEARN MORE ",
     "linkColor": "hsl(7, 99%, 70%)",
     "altDescription:": "Red cup"
