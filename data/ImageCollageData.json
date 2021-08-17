@@ -1,19 +1,19 @@
 [
   {
-    "mobile": "/mobile/image-gallery-milkbottles.jpg",
+    "mobile": "/image1.jpeg",
     "desktop": "/desktop/image-gallery-milkbottles.jpg"
   },
 
   {
-    "mobile": "/mobile/image-gallery-orange.jpg",
+    "mobile": "/image2.jpeg",
     "desktop": "/desktop/image-gallery-orange.jpg"
   },
   {
-    "mobile": "/mobile/image-gallery-cone.jpg",
+    "mobile": "/image3.jpeg",
     "desktop": "/desktop/image-gallery-cone.jpg"
   },
   {
-    "mobile": "/mobile/image-gallery-sugar-cubes.jpg",
+    "mobile": "/image4.jpeg",
     "desktop": "/desktop/image-gallery-sugar-cubes.jpg"
   }
 ]
