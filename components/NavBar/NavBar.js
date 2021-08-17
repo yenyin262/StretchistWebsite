@@ -14,14 +14,14 @@ const NavBar = () => {
     <div className={styles["main-nav"]}>
       <div className={styles["main-nav__logo"]}>
         <Link href="/">
-          <Image
+          {/* <Image
             src={logo}
             alt="Logo"
             layout="responsive"
             width={180}
             height={40}
-          />
-          {/* 
+          /> */}
+
           <Image
             src="/TheStretchistLogo.png"
             alt="Logo"
@@ -29,7 +29,7 @@ const NavBar = () => {
             width={700}
             height={378}
             color={"black"}
-          /> */}
+          />
         </Link>
       </div>
       <div ref={ref}>
