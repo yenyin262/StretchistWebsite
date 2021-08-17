@@ -1,13 +1,13 @@
-import NavBar from "../components/NavBar/NavBar";
 import Link from "next/link";
+import Layout from "../components/Layout/Layout";
 const About = () => {
   return (
-    <div>
-      <h1>About Page </h1>
+    <Layout>
+      <h4>About Me </h4>
       <Link href="/">
         <a> Go back to Home</a>
       </Link>
-    </div>
+    </Layout>
   );
 };
 
