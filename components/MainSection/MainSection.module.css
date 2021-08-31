@@ -1,3 +1,11 @@
+.main-section:nth-of-type(odd) {
+  background: #eceadf;
+}
+
+.main-section:nth-of-type(even) {
+  background: #dad7cd;
+}
+
 .main-section__title {
   font-size: 36px;
   font-weight: 700;
