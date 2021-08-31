@@ -22,12 +22,12 @@ const HeroImage = ({ children }) => {
       <style jsx>{`
         @media (max-width: 400px) {
           .heroImage {
-            background: #112b24;
+            background: #00421a;
           }
         }
         @media (min-width: 400px) {
           .heroImage {
-            background: #112b24;
+            background: #00421a;
           }
         }
       `}</style>

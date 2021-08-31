@@ -6,8 +6,7 @@ const Layout = ({ children }) => {
     <div>
       <div
         style={{
-          paddingBottom: "20px",
-          backgroundColor: "#10375C",
+          backgroundColor: "#00421a",
         }}
       >
         <NavBar />
