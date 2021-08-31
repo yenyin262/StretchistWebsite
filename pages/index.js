@@ -40,7 +40,6 @@ export async function getStaticProps() {
   const sections = getJSONSections();
   const socialSections = getJSONSocialSections();
   const testimonials = getJSONtestimonials();
-
   const imgCollages = getImageCollage();
   console.log(sections);
 
