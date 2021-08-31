@@ -12,10 +12,11 @@
   font-family: "Barlow";
   align-items: center;
   font-size: 20px;
+  transition: 0.7s ease all;
 }
 
 a.main-nav__link:hover {
-  background-color: var(--color-primary-maya-blue);
+  background-color: hsl(156deg 50% 48%);
   border-radius: 50px;
 }
 
