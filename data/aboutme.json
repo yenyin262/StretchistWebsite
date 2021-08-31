@@ -1,0 +1,46 @@
+{
+  "coreValues": {
+    "title": "My Core Work Values",
+    "content": "Our values integrated with our lifestyle.",
+    "values": [
+      {
+        "mobile": "/commitment_icon.svg",
+        "label": "Commitment",
+        "description": "The ability to be persistent"
+      },
+      {
+        "mobile": "/motivation_icon.svg",
+        "label": "Motivation",
+        "description": "Our mental process that guides our everyday behaviour"
+      },
+      {
+        "mobile": "/team_icon.svg",
+        "label": "Teamwork",
+        "description": "Working together as one"
+      },
+      {
+        "mobile": "/passion_icon.svg",
+        "label": "Passion",
+        "description": "What you live for"
+      }
+    ]
+  },
+
+  "myExperience": {
+    "title": "My Experience in Numbers",
+    "values": [
+      {
+        "numbers": "3 Years",
+        "label": "of one-on-one committed experience"
+      },
+      {
+        "numbers": "30",
+        "label": "satisfied clients"
+      },
+      {
+        "numbers": "6",
+        "label": "Years in the fitness industry"
+      }
+    ]
+  }
+}
