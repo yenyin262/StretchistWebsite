@@ -1,12 +1,12 @@
 .mobilemenu__nav {
-  background: var(--color-primary-white);
+  background: #d1e7de;
   padding: 40px 95px;
   width: 325px;
   position: absolute;
   top: 113px;
   right: 26px;
   color: black;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   -moz-box-orient: vertical;
   -moz-box-direction: normal;
@@ -21,7 +21,7 @@
   width: 0;
   height: 0;
   border: 33px solid transparent;
-  border-bottom-color: var(--color-primary-white);
+  border-bottom-color: #d1e7de;
   border-top: 0;
   border-right: 0;
   margin-left: -16.5px;
@@ -38,6 +38,6 @@
 }
 
 a.mobilemenu__nav__link:hover {
-  background-color: var(--color-primary-yellow-);
+  background-color: hsl(156deg 50% 48%);
   border-radius: 50px;
 }
