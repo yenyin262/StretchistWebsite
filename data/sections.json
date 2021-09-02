@@ -1,6 +1,6 @@
 [
   {
-    "image": "/community3.jpeg",
+    "image": "/familystretch.png",
     "title": "What is Assisted Stretch Therapy?",
     "link": "./whystretch",
     "order": 1,
@@ -10,7 +10,7 @@
     "altDescription": "Egg"
   },
   {
-    "image": "/stretch1.jpeg",
+    "image": "/teamstretch.png",
     "title": "Our Story ",
     "link": "/about",
     "order": 2,

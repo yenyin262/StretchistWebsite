@@ -25,27 +25,29 @@ const MainSection = ({ data }) => {
           background: ${data.linkColor};
         }
       `}</style>
-      <div className={styles["main-section"]}>
-        <div className={styles["main-section__img-card"]}>
-          <Image
-            src={data.image}
-            alt={data.altDescription}
-            width={370}
-            height={370}
-            layout="responsive"
-          />
-        </div>
+      <div className={styles["main-section-wrapper"]}>
+        <div className={styles["main-section"]}>
+          <div className={styles["main-section__img-card"]}>
+            <Image
+              src={data.image}
+              alt={data.altDescription}
+              width={370}
+              height={370}
+              layout="responsive"
+            />
+          </div>
 
-        <div className={styles["main-section__description-card"]}>
-          <div className={styles["main-section__body"]}>
-            <div className={styles["main-section__title"]}>{data.title}</div>
-            <div className={styles["main-section__content"]}>
-              {data.content}
-            </div>
-            <div className={styles["main-section__button"]}>
-              <Link href={data.link}>
-                <a>{data.details}</a>
-              </Link>
+          <div className={styles["main-section__description-card"]}>
+            <div className={styles["main-section__body"]}>
+              <div className={styles["main-section__title"]}>{data.title}</div>
+              <div className={styles["main-section__content"]}>
+                {data.content}
+              </div>
+              <div className={styles["main-section__button"]}>
+                <Link href={data.link}>
+                  <a>{data.details}</a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
