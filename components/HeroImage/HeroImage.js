@@ -20,14 +20,14 @@ const HeroImage = ({ children }) => {
       `}</style> */}
 
       <style jsx>{`
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           .heroImage {
-            background: #00421a;
+            background: #e0f2f1;
           }
         }
-        @media (min-width: 400px) {
+        @media (min-width: 1024px) {
           .heroImage {
-            background: #00421a;
+            background: #ffff;
           }
         }
       `}</style>
@@ -35,11 +35,13 @@ const HeroImage = ({ children }) => {
       <div className={classnames(`heroImage`, styles.hero)}>
         {children}
         <div className={styles.hero__content}>
-          {/* <Image src="/logo2.png" width={375} height={146} /> */}
-          {/* <h1 className={styles.hero__content_title}>We are creatives</h1>
-          <HeroArrow /> */}
-          <h1 style={{ color: "white" }}>Assisted Stretch Therapy</h1>
-          <h3 style={{ color: "hsl(156deg 50% 48%)" }}>with Gaby Chin</h3>
+          <div className={styles.hero__image}>
+            <Image src="/hero_img.png" width={400} height={500} />
+          </div>
+          <div className={styles.hero__heading}>
+            <h1 style={{}}>Assisted Stretch Therapy</h1>
+            <h3 style={{ color: "hsl(156deg 50% 48%)" }}>with Gaby Chin</h3>
+          </div>
         </div>
       </div>
     </>
