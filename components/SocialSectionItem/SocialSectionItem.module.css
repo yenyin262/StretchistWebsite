@@ -3,15 +3,14 @@
   background-position: center;
   background-size: cover;
   height: 635px;
-  display: flex;
-  align-items: flex-end;
   flex: 1;
 }
 
 .item__body {
   padding: 0px 20px 65px;
-  max-width: 340px;
+  max-width: 375px;
   margin: 0 auto;
+  transform: translateY(350px);
 }
 
 .item__title {
@@ -20,13 +19,16 @@
   text-align: center;
   font-family: Barlow;
   margin-bottom: 40px;
-  color: var(--color-neutral-desaturated-darkblue);
+  color: #00a23f;
 }
 
 .item__content {
   font-family: barlow;
   font-weight: 500;
-  color: var(--color-neutral-verydarkgreyblue);
+  color: #000;
   line-height: 25px;
   text-align: center;
+  padding: 15px;
+  background: rgba(204, 204, 204, 0.7);
+  border-radius: 10px;
 }
