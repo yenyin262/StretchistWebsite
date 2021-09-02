@@ -38,6 +38,7 @@
 }
 
 a.mobilemenu__nav__link:hover {
-  background-color: hsl(156deg 50% 48%);
+  /* background-color: hsl(156deg 50% 48%); */
+  background-color: #40c2a6;
   border-radius: 50px;
 }
