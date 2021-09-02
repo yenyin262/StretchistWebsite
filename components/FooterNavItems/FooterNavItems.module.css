@@ -1,9 +1,10 @@
 .footer-nav__link {
-  color: #3ebb8a;
+  color: #1d5d44;
   display: flex;
   justify-content: space-evenly;
   font-family: "Barlow";
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 a.footer-nav__link {
