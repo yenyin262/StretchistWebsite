@@ -10,6 +10,7 @@ const TestimonialItem = ({ data }) => {
           src={data.image}
           width={80}
           height={80}
+          alt={data.alt}
         />
       </div>
 

@@ -1,6 +1,7 @@
 [
   {
     "image": "/image-emily.jpg",
+    "alt": "Emily",
     "content": "We put our trust on Sketchist, they delivered and I on my way to reaching my fitness goal ",
     "name": "Shannon",
     "position": "Physiotherapist",
@@ -8,6 +9,7 @@
   },
   {
     "image": "/image-jennie.jpg",
+    "alt": "Jennie",
     "content": "Incredible end result! I am now able to stretch like no other",
     "name": "jas",
     "position": "engineer",
@@ -15,6 +17,7 @@
   },
   {
     "image": "/image-thomas.jpg",
+    "alt": "Thomas",
     "content": "“This technique was surprisingly effective! I saw immediate results in my posture, and release of stress and tension in my neck, shoulders, and back. Gaby is extremely intuitive and body aware. Thanks Gaby!”",
     "name": "Raymond",
     "position": "Business Owner",

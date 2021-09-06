@@ -5,21 +5,25 @@
     "values": [
       {
         "mobile": "/commitment_icon.svg",
+        "alt": "Commitment",
         "label": "Commitment",
         "description": "The ability to be persistent"
       },
       {
         "mobile": "/motivation_icon.svg",
+        "alt": "Motivation",
         "label": "Motivation",
         "description": "Our mental process that guides our everyday behaviour"
       },
       {
         "mobile": "/team_icon.svg",
+        "alt": "Teamwork",
         "label": "Teamwork",
         "description": "Working together as one"
       },
       {
         "mobile": "/passion_icon.svg",
+        "alt": "Passion",
         "label": "Passion",
         "description": "What you live for"
       }

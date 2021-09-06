@@ -1,19 +1,23 @@
 [
   {
     "mobile": "/image_1.png",
-    "desktop": "/desktop/image-gallery-milkbottles.jpg"
+    "desktop": "/desktop/image-gallery-milkbottles.jpg",
+    "altDescription": "ankle stretch"
   },
 
   {
     "mobile": "/image_2.png",
-    "desktop": "/desktop/image-gallery-orange.jpg"
+    "desktop": "/desktop/image-gallery-orange.jpg",
+    "altDescription": "calf stretch"
   },
   {
     "mobile": "/image_3.png",
-    "desktop": "/desktop/image-gallery-cone.jpg"
+    "desktop": "/desktop/image-gallery-cone.jpg",
+    "altDescription": "back stretch"
   },
   {
     "mobile": "/image_4.png",
-    "desktop": "/desktop/image-gallery-sugar-cubes.jpg"
+    "desktop": "/desktop/image-gallery-sugar-cubes.jpg",
+    "altDescription": "wristf stretch"
   }
 ]

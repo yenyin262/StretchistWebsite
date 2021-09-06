@@ -14,7 +14,12 @@ const About = ({ coreValues, myExperience }) => {
             {coreValues.values.map((value, index) => {
               return (
                 <div key={index} className={styles.corevalueItem}>
-                  <Image src={value.mobile} height={100} width={100} />
+                  <Image
+                    src={value.mobile}
+                    height={100}
+                    width={100}
+                    alt={value.alt}
+                  />
                   <div className={styles.corevalue__label}>{value.label}</div>
                   <div className={styles.description}>{value.description}</div>
                 </div>
