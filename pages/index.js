@@ -19,14 +19,10 @@ const Home = ({ sections, socialSections, testimonials, imgCollages }) => {
       <HeroImage>
         <NavBar />
       </HeroImage>
-      <div>
-        {sections.map((section, index) => (
-          <MainSection data={section} key={index} />
-        ))}
-      </div>
-
+      {sections.map((section, index) => (
+        <MainSection data={section} key={index} />
+      ))}
       <SocialSection socialSections={socialSections} />
-
       <TestimonialSection testimonials={testimonials} />
       <ImgCollageSection imgCollages={imgCollages} />
       <Footer />
