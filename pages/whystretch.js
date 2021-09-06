@@ -9,35 +9,36 @@ const whystretch = () => {
         <h3 className={styles.heading}>
           Stretch with us for an ultimate experience
         </h3>
-        <div className={styles["stretchfacts-img_card_test"]}>
-          <video loop autoPlay style={{ width: "100%" }}>
-            <source src="/vid_two.webm" type="video/webm" />
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-        </div>
+        <video loop autoPlay className={styles.video}>
+          <source src="/vid_two.webm" type="video/webm" />
+          Sorry, your browser doesnt support embedded videos.
+        </video>
       </div>
 
       <div>
         {stretchfacts.map((fact, index) => {
           return (
             <div key={index} className={styles["stretchfacts-list"]}>
-              <div className={styles["stretchfacts-img_card"]}>
-                <Image
-                  src={fact.mobileImage}
-                  width={400}
-                  height={220}
-                  layout="responsive"
-                  className={styles.img}
-                />
-              </div>
-              <div className={styles["stretch-content"]}>
-                <div className={styles.item}>
-                  <h3 className={styles["stretch-content_title"]}>
-                    {fact.title}
-                  </h3>
-                  <p className={styles["stretch-content_content"]}>
-                    {fact.content}
-                  </p>
+              <div className={styles.stretchItem}>
+                <div className={styles["stretchfacts-img_card"]}>
+                  <Image
+                    src={fact.mobileImage}
+                    alt={fact.altDescription}
+                    width={400}
+                    height={220}
+                    layout="responsive"
+                    className={styles.img}
+                  />
+                </div>
+                <div className={styles["stretch-content"]}>
+                  <div className={styles.item}>
+                    <h3 className={styles["stretch-content_title"]}>
+                      {fact.title}
+                    </h3>
+                    <p className={styles["stretch-content_content"]}>
+                      {fact.content}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
