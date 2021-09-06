@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <div className={styles["main-nav"]}>
       <div className={styles["main-nav__logo"]}>
-        <Link href="/">
+        <Link href="/" passHref>
           {/* <Image
             src={logo}
             alt="Logo"

@@ -36,7 +36,12 @@ const HeroImage = ({ children }) => {
         {children}
         <div className={styles.hero__content}>
           <div className={styles.hero__image}>
-            <Image src="/hero_img.png" width={400} height={500} />
+            <Image
+              src="/hero_img.png"
+              width={400}
+              height={500}
+              alt="Assisted Stretch Therapist, Gaby."
+            />
           </div>
           <div className={styles.hero__heading}>
             <h1 style={{}}>Assisted Stretch Therapy</h1>
