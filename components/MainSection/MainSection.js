@@ -20,9 +20,14 @@ const MainSection = ({ data }) => {
           width: 145px;
           height: 8px;
           transform: translateX(-50%);
-          z-index: -1;
-          opacity: 0.5;
+          z-index: 1;
+          opacity: 0;
           background: ${data.linkColor};
+          transition: opacity 200ms ease-in;
+        }
+
+        a:hover::before {
+          opacity: 0.5;
         }
       `}</style>
       <div className={styles["main-section-wrapper"]}>
