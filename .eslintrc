@@ -1,6 +1,5 @@
 {
   "extends": [
-    "import",
     "next",
     "next/core-web-vitals"
   ]
