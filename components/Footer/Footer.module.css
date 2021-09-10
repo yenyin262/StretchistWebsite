@@ -1,5 +1,4 @@
 .footer {
-  /* background-color: #f0fff0; */
   background-color: #f1f6ec;
   padding: 60px 15px;
   width: 100%;
@@ -9,8 +8,8 @@
   margin: 0 auto;
 }
 .footer__logo {
-  display: flex;
   justify-content: center;
   margin-bottom: 45px;
-  /* width: 250px; */
+  width: 200px;
+  margin: 0 auto 30px;
 }
