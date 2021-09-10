@@ -1,7 +1,5 @@
 {
-  "images": {
-    "mobile": "/mobile/image-header.jpg",
-    "desktop": "/desktop/image-header.jpg"
-  },
-  "title": "hero-banner"
+  "heroImage": "/hero_img.png",
+  "title": "Assisted Stretch Therapy",
+  "subtitle": "with Gaby Chin"
 }
