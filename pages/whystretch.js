@@ -1,8 +1,8 @@
-import stretchfacts from "../data/stretchfacts.json";
+import { getJSONStretchData } from "../lib/stretch";
 import Image from "next/Image";
 import Layout from "../components/Layout/Layout";
 import styles from "./whystretch.module.css";
-const whystretch = () => {
+const whystretch = ({ title, facts }) => {
   return (
     <Layout>
       <div className={styles["stretchfacts-test"]}>
@@ -14,9 +14,18 @@ const whystretch = () => {
           Sorry, your browser doesnt support embedded videos.
         </video>
       </div>
+      <div
+        style={{
+          padding: "60px 0 ",
+          textAlign: "center",
+          backgroundColor: "#fffff",
+        }}
+      >
+        <h1> {title}</h1>
+      </div>
 
       <div>
-        {stretchfacts.map((fact, index) => {
+        {facts.map((fact, index) => {
           return (
             <div key={index} className={styles["stretchfacts-list"]}>
               <div className={styles.stretchItem}>
@@ -50,3 +59,11 @@ const whystretch = () => {
 };
 
 export default whystretch;
+
+export async function getStaticProps() {
+  const { title, facts } = getJSONStretchData();
+
+  return {
+    props: { title, facts },
+  };
+}
