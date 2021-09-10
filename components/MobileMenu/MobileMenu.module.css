@@ -6,7 +6,7 @@
   top: 113px;
   right: 26px;
   color: black;
-  z-index: 3;
+  z-index: 1;
   display: flex;
   -moz-box-orient: vertical;
   -moz-box-direction: normal;

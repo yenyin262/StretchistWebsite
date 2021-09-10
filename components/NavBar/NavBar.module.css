@@ -11,6 +11,10 @@
   width: 100px;
 }
 
+.main-nav__logo:hover {
+  cursor: pointer;
+}
+
 .togglebutton {
   border: none;
   background: none;
