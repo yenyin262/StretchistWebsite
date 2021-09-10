@@ -1,6 +1,6 @@
 import styles from "./HeroImage.module.css";
 import classnames from "classnames";
-import Image from "next/Image";
+import Image from "next/image";
 const HeroImage = ({ children, heroImage, title, subtitle }) => {
   return (
     <>

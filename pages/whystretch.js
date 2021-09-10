@@ -1,5 +1,5 @@
 import { getJSONStretchData } from "../lib/stretch";
-import Image from "next/Image";
+import Image from "next/image";
 import Layout from "../components/Layout/Layout";
 import styles from "./whystretch.module.css";
 const whystretch = ({ title, facts }) => {

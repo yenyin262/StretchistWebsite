@@ -1,7 +1,7 @@
 import styles from "./about.module.css";
 import Layout from "../components/Layout/Layout";
 import { getJSONAboutData } from "../lib/about";
-import Image from "next/Image";
+import Image from "next/image";
 const About = ({ coreValues, myExperience, heading }) => {
   return (
     <Layout>
