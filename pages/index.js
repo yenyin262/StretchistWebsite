@@ -13,6 +13,7 @@ import MainSection from "../components/MainSection/MainSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import SocialSection from "../components/SocialSection/SocialSection";
 import ImgCollageSection from "../components/ImgCollageSection/ImgCollageSection";
+import { getHeroImage } from "../lib/api";
 
 const Home = ({
   sections,
@@ -46,8 +47,10 @@ export async function getStaticProps() {
   const socialSections = getJSONSocialSections();
   const testimonials = getJSONtestimonials();
   const imgCollages = getImageCollage();
-  const { heroImage, title, subtitle } = getJSONHeroData();
-  console.log(sections);
+  // const { heroImage, title, subtitle } = getJSONHeroData();
+  const { heroImage, title, subtitle } = await getHeroImage(false);
+
+  console.log(heroImage);
 
   return {
     props: {
