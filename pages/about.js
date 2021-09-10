@@ -51,14 +51,6 @@ const About = ({ coreValues, myExperience, heading }) => {
 
 export default About;
 
-// export async function getStaticProps() {
-//   const { aboutMe } = getJSONAboutData();
-
-//   return {
-//     props: { aboutMe },
-//   };
-// }
-
 export async function getStaticProps() {
   const { coreValues, myExperience, heading } = getJSONAboutData();
 
