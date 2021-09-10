@@ -5,6 +5,7 @@ import {
   getJSONSocialSections,
   getJSONtestimonials,
   getImageCollage,
+  getJSONHeroData,
 } from "../lib/sections";
 import HeroImage from "../components/HeroImage/HeroImage";
 import styles from "./index.module.css";
@@ -13,10 +14,18 @@ import TestimonialSection from "../components/TestimonialSection/TestimonialSect
 import SocialSection from "../components/SocialSection/SocialSection";
 import ImgCollageSection from "../components/ImgCollageSection/ImgCollageSection";
 
-const Home = ({ sections, socialSections, testimonials, imgCollages }) => {
+const Home = ({
+  sections,
+  socialSections,
+  testimonials,
+  imgCollages,
+  subtitle,
+  title,
+  heroImage,
+}) => {
   return (
     <div className={styles.home}>
-      <HeroImage>
+      <HeroImage subtitle={subtitle} title={title} heroImage={heroImage}>
         <NavBar />
       </HeroImage>
       {sections.map((section, index) => (
@@ -37,9 +46,18 @@ export async function getStaticProps() {
   const socialSections = getJSONSocialSections();
   const testimonials = getJSONtestimonials();
   const imgCollages = getImageCollage();
+  const { heroImage, title, subtitle } = getJSONHeroData();
   console.log(sections);
 
   return {
-    props: { sections, socialSections, testimonials, imgCollages },
+    props: {
+      sections,
+      socialSections,
+      testimonials,
+      imgCollages,
+      heroImage,
+      subtitle,
+      title,
+    },
   };
 }
