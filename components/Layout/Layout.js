@@ -3,17 +3,21 @@ import NavBar from "../NavBar/NavBar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <div
-        style={{
-          backgroundColor: "#e0f2f1",
-        }}
-      >
+    <>
+      <style jsx>{`
+        .layoutContainer {
+          background-color: #e0f2f1;
+        }
+        .layoutContainer :global(.nav-link-dynamic-color) {
+          color: #1d5d44;
+        }
+      `}</style>
+      <div className={`layoutContainer`}>
         <NavBar />
       </div>
       {children}
       <Footer />
-    </div>
+    </>
   );
 };
 
