@@ -5,7 +5,7 @@ const ImgItem = ({ data }) => {
   return (
     <div className={styles.imageCollage__item}>
       <Image
-        src={data.mobile}
+        src={data.image}
         alt={data.altDescription}
         width={376}
         height={376}
