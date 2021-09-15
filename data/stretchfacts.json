@@ -1,20 +1,21 @@
 {
+  "heading": "Stretch with us for an ultimate experience",
   "title": "Why should we get stretched?",
   "facts": [
     {
-      "mobileImage": "/backstretch.png",
+      "image": "/backstretch.png",
       "altDescription": "Assisting client with a back stretch",
       "title": "Spearheaded by a Stretch Guru",
       "content": "You're probably asking- why should I let someone stretch me? Allowing us to stretch enables you to experience a deeper and safer stretch that builds up your flexibility."
     },
     {
-      "mobileImage": "/sidestretch.png",
+      "image": "/sidestretch.png",
       "altDescription": "Assisting client with a side stretch.",
       "title": "What to expect?",
       "content": "We would do an assessment on your first session. This allows us to assess your range of motion and whether you have any areas that require attention. We also ask about your goals and expectations so that your sessions align with your expectations. "
     },
     {
-      "mobileImage": "/floorpose_img.jpg",
+      "image": "/floorpose_img.jpg",
       "altDescription": "Floor Pose",
       "title": "Are our Stretch Gurus certified?",
       "content": "Yes. Gaby attained her qualification from Canada, and has 400 hours of practical experience!"
