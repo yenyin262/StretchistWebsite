@@ -1,14 +1,12 @@
 import { getJSONStretchData } from "../lib/stretch";
 import Image from "next/image";
 import Layout from "../components/Layout/Layout";
-import styles from "./whystretch.module.css";
-const whystretch = ({ title, facts }) => {
+import styles from "./JoinUs.module.css";
+const JoinUs = ({ title, facts, heading }) => {
   return (
     <Layout>
       <div className={styles["stretchfacts-test"]}>
-        <h3 className={styles.heading}>
-          Stretch with us for an ultimate experience
-        </h3>
+        <h3 className={styles.heading}>{heading}</h3>
         <video loop autoPlay className={styles.video}>
           <source src="/vid_two.webm" type="video/webm" />
           Sorry, your browser doesnt support embedded videos.
@@ -31,7 +29,7 @@ const whystretch = ({ title, facts }) => {
               <div className={styles.stretchItem}>
                 <div className={styles["stretchfacts-img_card"]}>
                   <Image
-                    src={fact.mobileImage}
+                    src={fact.image}
                     alt={fact.altDescription}
                     width={400}
                     height={220}
@@ -58,12 +56,12 @@ const whystretch = ({ title, facts }) => {
   );
 };
 
-export default whystretch;
+export default JoinUs;
 
 export async function getStaticProps() {
-  const { title, facts } = getJSONStretchData();
+  const { title, facts, heading } = getJSONStretchData();
 
   return {
-    props: { title, facts },
+    props: { title, facts, heading },
   };
 }
