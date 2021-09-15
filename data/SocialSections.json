@@ -1,16 +1,14 @@
 [
   {
     "title": "Upcoming Events",
-    "mobileImage": "/community.jpeg",
-    "desktopImage": "/community.jpeg",
+    "image": "/community.jpeg",
     "link": "mylink",
     "order": 1,
     "content": "Check out what's happening near you!"
   },
   {
     "title": "Community Work",
-    "mobileImage": "/community2.jpeg",
-    "desktopImage": "/community2.jpeg",
+    "image": "/community2.jpeg",
     "link": "mylink",
     "order": 2,
     "content": "From time to time we contribute to the community by providing stretching demonstration to highlight the advantages it has to our health."
