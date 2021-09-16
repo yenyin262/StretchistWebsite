@@ -1,14 +1,15 @@
 import { getJSONStretchData } from "../lib/stretch";
 import Image from "next/image";
 import Layout from "../components/Layout/Layout";
-import styles from "./JoinUs.module.css";
-const JoinUs = ({ title, facts, heading }) => {
+import styles from "./joinus.module.css";
+import { getJoinUsPage } from "../lib/api";
+const JoinUs = ({ heading, videoClip, whyStretchSection }) => {
   return (
     <Layout>
       <div className={styles["stretchfacts-test"]}>
         <h3 className={styles.heading}>{heading}</h3>
         <video loop autoPlay className={styles.video}>
-          <source src="/vid_two.webm" type="video/webm" />
+          <source src={videoClip} type="video/webm" />
           Sorry, your browser doesnt support embedded videos.
         </video>
       </div>
@@ -19,11 +20,11 @@ const JoinUs = ({ title, facts, heading }) => {
           backgroundColor: "#fffff",
         }}
       >
-        <h1> {title}</h1>
+        <h1> {whyStretchSection.title}</h1>
       </div>
 
       <div>
-        {facts.map((fact, index) => {
+        {whyStretchSection.facts.map((fact, index) => {
           return (
             <div key={index} className={styles["stretchfacts-list"]}>
               <div className={styles.stretchItem}>
@@ -59,9 +60,9 @@ const JoinUs = ({ title, facts, heading }) => {
 export default JoinUs;
 
 export async function getStaticProps() {
-  const { title, facts, heading } = getJSONStretchData();
+  const { heading, whyStretchSection, videoClip } = await getJoinUsPage(false);
 
   return {
-    props: { title, facts, heading },
+    props: { heading, whyStretchSection, videoClip },
   };
 }

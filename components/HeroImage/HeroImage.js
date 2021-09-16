@@ -5,29 +5,23 @@ const HeroImage = ({ children, heroImage, title, subtitle }) => {
   return (
     <>
       <style jsx>{`
-        @media (max-width: 768px) {
-          .heroImage {
-            background: #e0f2f1;
-          }
-        }
-        @media (min-width: 1024px) {
-          .heroImage {
-            background: #ffff;
-          }
+        .heroImage {
+          background-image: url("${heroImage}");
         }
       `}</style>
 
       <div className={classnames(`heroImage`, styles.hero)}>
         {children}
         <div className={styles.hero__content}>
-          <div className={styles.hero__image}>
+          {/* <div className={styles.hero__image}>
             <Image
               src={heroImage}
-              width={400}
+              width={500}
               height={500}
               alt="thestretchist"
+              className={styles.img}
             />
-          </div>
+          </div> */}
           <div className={styles.hero__heading}>
             <h1>{title}</h1>
             <h3 style={{ color: "hsl(156deg 50% 48%)" }}>{subtitle}</h3>

@@ -35,7 +35,7 @@ const MainSection = ({ data }) => {
           <div className={styles["main-section__img-card"]}>
             <Image
               src={data.image}
-              alt={data.altDescription}
+              alt={data.alt}
               width={370}
               height={370}
               layout="responsive"

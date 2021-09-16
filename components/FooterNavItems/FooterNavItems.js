@@ -8,7 +8,7 @@ const navItems = [
   },
   {
     title: " Join us",
-    link: "/JoinUs",
+    link: "/joinus",
   },
 
   { title: "Contact", link: "/contact" },

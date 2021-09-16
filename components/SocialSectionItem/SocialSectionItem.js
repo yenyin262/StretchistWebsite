@@ -5,16 +5,8 @@ const SocialSectionItem = ({ data }) => {
   return (
     <>
       <style jsx>{`
-        @media (max-width: 400px) {
-          .img {
-            background-image: url("${data.mobileImage}");
-          }
-        }
-
-        @media (min-width: 400px) {
-          .img {
-            background-image: url("${data.desktopImage}");
-          }
+        .img {
+          background-image: url("${data.image}");
         }
       `}</style>
       <div className={classnames(`img`, styles.item)}>

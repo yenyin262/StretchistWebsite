@@ -1,6 +1,8 @@
 import Layout from "../components/Layout/Layout";
 import styles from "./contact.module.css";
-import { getJSONContactData } from "../lib/contact";
+// import { getJSONContactData } from "../lib/contact";
+import { getContactSection } from "../lib/api";
+
 const Contact = ({ title, message, email }) => {
   return (
     <Layout>
@@ -32,7 +34,7 @@ const Contact = ({ title, message, email }) => {
 export default Contact;
 
 export async function getStaticProps() {
-  const props = getJSONContactData();
+  const { title, message, email } = await getContactSection(false);
 
-  return { props };
+  return { props: { title, message, email } };
 }
