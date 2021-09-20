@@ -25,7 +25,8 @@ const NavItems = () => {
             <a
               className={classNames(
                 styles["main-nav__link"],
-                "nav-link-dynamic-color"
+                "nav-link-dynamic-color",
+                "nav-joinus-link-dynamic-color"
               )}
             >
               {" "}

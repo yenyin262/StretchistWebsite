@@ -1,18 +1,15 @@
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
-
+import classNames from "classnames";
 const Layout = ({ children }) => {
   return (
     <>
       <style jsx>{`
-        .layoutContainer {
+        .navBarContainer {
           background-color: #e0f2f1;
         }
-        .layoutContainer :global(.nav-link-dynamic-color) {
-          color: #1d5d44;
-        }
       `}</style>
-      <div className={`layoutContainer`}>
+      <div className={classNames("navBarContainer", "joinUsContainer")}>
         <NavBar />
       </div>
       {children}

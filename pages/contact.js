@@ -5,29 +5,43 @@ import { getContactSection } from "../lib/api";
 
 const Contact = ({ title, message, email }) => {
   return (
-    <Layout>
-      <div style={{ margin: "20px", height: "50vh" }}>
-        <h2 className={styles.heading}>{title}</h2>
+    <>
+      <style jsx>{`
+        @media (min-width: 1024px) {
+          :global(.nav-link-dynamic-color) {
+            color: #1d5d44;
+          }
+        }
+      `}</style>
+      <Layout>
         <div
           style={{
-            width: "100%",
-            marginTop: "20px",
-            backgroundColor: "#8fd4c5",
-            maxWidth: "500px",
-            margin: " 0 auto",
+            margin: "20px",
+            height: "50vh",
           }}
         >
-          <p
+          <h2 className={styles.heading}>{title}</h2>
+          <div
             style={{
-              padding: "30px",
-              textAlign: "center",
+              width: "100%",
+              marginTop: "20px",
+              backgroundColor: "#8fd4c5",
+              maxWidth: "500px",
+              margin: " 0 auto",
             }}
           >
-            {message} <span style={{ fontWeight: "bold" }}> {email} </span>
-          </p>
+            <p
+              style={{
+                padding: "30px",
+                textAlign: "center",
+              }}
+            >
+              {message} <span style={{ fontWeight: "bold" }}> {email} </span>
+            </p>
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 
