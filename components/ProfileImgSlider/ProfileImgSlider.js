@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./ProfileImgSlider.module.css";
 
-const ProfileImgSlider = ({ profileImages, img, content }) => {
+const ProfileImgSlider = ({ images, content }) => {
   const [active, setActive] = useState(0);
 
   return (
@@ -12,17 +12,19 @@ const ProfileImgSlider = ({ profileImages, img, content }) => {
         <div style={{ marginBottom: "10px" }}>
           <Image
             className={styles.aboutImg}
-            src={profileImages[active].image}
+            src={images[active].src}
+            alt={images[active].alt}
             width={350}
             height={350}
           />
         </div>
         <div className={styles.slider}>
-          {profileImages.map((profileImage, index) => {
+          {images.map((profileImage, index) => {
             return (
               <div>
                 <Image
-                  src={profileImage.image}
+                  src={profileImage.src}
+                  alt={profileImage.alt}
                   width={55}
                   height={55}
                   className={
