@@ -4,13 +4,13 @@
   margin: 32px;
 }
 
-.aboutContent {
+/* .aboutContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 35px;
   text-align: justify;
-}
+} */
 
 .imgContainer {
   margin-bottom: 25px;
