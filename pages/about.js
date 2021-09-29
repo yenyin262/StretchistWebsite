@@ -1,9 +1,17 @@
 import styles from "./about.module.css";
 import Layout from "../components/Layout/Layout";
-import { getJSONAboutData } from "../lib/about";
+import { getJSONProfileImg } from "../lib/about";
 import Image from "next/image";
 import { getAboutPage } from "../lib/api";
-const About = ({ coreValues, myExperience, title, aboutSection }) => {
+import ProfileImgSlider from "../components/ProfileImgSlider/ProfileImgSlider";
+const About = ({
+  preview,
+  coreValues,
+  myExperience,
+  title,
+  aboutSection,
+  profileImages,
+}) => {
   return (
     <>
       <style jsx>{`
@@ -13,22 +21,27 @@ const About = ({ coreValues, myExperience, title, aboutSection }) => {
           }
         }
       `}</style>
-      <Layout>
+      <Layout preview={preview}>
         <div>
           <h1 className={styles.aboutme_mainheading}>{title}</h1>
 
           <div>
-            <div className={styles.aboutContent}>
-              <div className={styles.imgContainer}>
-                <Image
+            {/* <div className={styles.aboutContent}> */}
+            <div className={styles.imgContainer}>
+              <ProfileImgSlider
+                img={aboutSection.image}
+                content={aboutSection.content}
+                profileImages={profileImages}
+              />
+              {/* <Image
                   className={styles.aboutImg}
                   src={aboutSection.image}
                   width={350}
                   height={350}
-                />
-              </div>
-              <div className={styles.content}>{aboutSection.content}</div>
+                /> */}
             </div>
+            {/* <div className={styles.content}>{aboutSection.content}</div> */}
+            {/* </div> */}
 
             <h2 className={styles.corevalues__subheading}>
               {coreValues.title}
@@ -78,12 +91,20 @@ const About = ({ coreValues, myExperience, title, aboutSection }) => {
 
 export default About;
 
-export async function getStaticProps() {
-  const { coreValues, myExperience, title, aboutSection } = await getAboutPage(
-    false
-  );
+export async function getStaticProps({ preview = false }) {
+  const profileImages = getJSONProfileImg();
+  const { coreValues, myExperience, title, aboutSection } = await getAboutPage({
+    preview,
+  });
 
   return {
-    props: { coreValues, myExperience, title, aboutSection },
+    props: {
+      coreValues,
+      myExperience,
+      title,
+      aboutSection,
+      preview,
+      profileImages,
+    },
   };
 }

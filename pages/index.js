@@ -20,8 +20,10 @@ import {
   getTestimonialSection,
   getImageCollageSection,
 } from "../lib/api";
+import Preview from "../components/Preview";
 
 const Home = ({
+  preview,
   sections,
   socialSections,
   testimonials,
@@ -31,43 +33,46 @@ const Home = ({
   heroImage,
 }) => {
   return (
-    <div className={styles.home}>
-      <HeroImage subtitle={subtitle} title={title} heroImage={heroImage}>
-        <NavBar />
-      </HeroImage>
-      {sections.map((section, index) => (
-        <MainSection data={section} key={index} />
-      ))}
-      <SocialSection socialSections={socialSections} />
-      <TestimonialSection testimonials={testimonials} />
-      <ImgCollageSection imgCollages={imgCollages} />
-      <Footer />
-    </div>
+    <Preview enabled={preview}>
+      <div className={styles.home}>
+        <HeroImage subtitle={subtitle} title={title} heroImage={heroImage}>
+          <NavBar />
+        </HeroImage>
+        {sections.map((section, index) => (
+          <MainSection data={section} key={index} />
+        ))}
+        <SocialSection socialSections={socialSections} />
+        <TestimonialSection testimonials={testimonials} />
+        <ImgCollageSection imgCollages={imgCollages} />
+        <Footer />
+      </div>
+    </Preview>
   );
 };
 
 export default Home;
 
-export async function getStaticProps() {
+export async function getStaticProps({ preview = false }) {
   // const sections = getJSONSections();
   // const socialSections = getJSONSocialSections();
   // const testimonials = getJSONtestimonials();
-  const testimonials = await getTestimonialSection(false);
+  const testimonials = await getTestimonialSection({ preview });
   // const imgCollages = getImageCollage();
-  const imgCollages = await getImageCollageSection(false);
+  const imgCollages = await getImageCollageSection({ preview });
   // const { heroImage, title, subtitle } = getJSONHeroData();
-  const socialSections = await getSocialSection(false);
-  const sections = await getIntroductionSection(false);
+  const socialSections = await getSocialSection({ preview });
+  const sections = await getIntroductionSection({ preview });
 
   console.log(
     "🚀 ~ file: index.js ~ line 52 ~ getStaticProps ~ sections",
     testimonials
   );
 
-  const { heroImage, title, subtitle } = await getHeroImage(false);
+  const { heroImage, title, subtitle } = await getHeroImage({ preview });
 
   return {
     props: {
+      preview,
       sections,
       socialSections,
       testimonials,

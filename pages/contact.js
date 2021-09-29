@@ -3,7 +3,7 @@ import styles from "./contact.module.css";
 // import { getJSONContactData } from "../lib/contact";
 import { getContactSection } from "../lib/api";
 
-const Contact = ({ title, message, email }) => {
+const Contact = ({ title, message, email, preview }) => {
   return (
     <>
       <style jsx>{`
@@ -13,7 +13,7 @@ const Contact = ({ title, message, email }) => {
           }
         }
       `}</style>
-      <Layout>
+      <Layout preview={preview}>
         <div
           style={{
             margin: "20px",
@@ -47,8 +47,8 @@ const Contact = ({ title, message, email }) => {
 
 export default Contact;
 
-export async function getStaticProps() {
-  const { title, message, email } = await getContactSection(false);
+export async function getStaticProps({ preview = false }) {
+  const { title, message, email } = await getContactSection({ preview });
 
-  return { props: { title, message, email } };
+  return { props: { title, message, email, preview } };
 }

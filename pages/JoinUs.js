@@ -3,7 +3,7 @@ import Image from "next/image";
 import Layout from "../components/Layout/Layout";
 import styles from "./joinus.module.css";
 import { getJoinUsPage } from "../lib/api";
-const JoinUs = ({ heading, videoClip, whyStretchSection }) => {
+const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
   return (
     <>
       <style jsx>{`
@@ -20,7 +20,7 @@ const JoinUs = ({ heading, videoClip, whyStretchSection }) => {
         }
       `}</style>
       <div className={`Container`}>
-        <Layout>
+        <Layout preview={preview}>
           <div className={styles["stretchfacts-test"]}>
             <h3 className={styles.heading}>{heading}</h3>
             <video loop autoPlay className={styles.video}>
@@ -76,10 +76,12 @@ const JoinUs = ({ heading, videoClip, whyStretchSection }) => {
 
 export default JoinUs;
 
-export async function getStaticProps() {
-  const { heading, whyStretchSection, videoClip } = await getJoinUsPage(false);
+export async function getStaticProps({ preview = false }) {
+  const { heading, whyStretchSection, videoClip } = await getJoinUsPage({
+    preview,
+  });
 
   return {
-    props: { heading, whyStretchSection, videoClip },
+    props: { heading, whyStretchSection, videoClip, preview },
   };
 }
