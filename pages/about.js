@@ -4,14 +4,7 @@ import { getJSONProfileImg } from "../lib/about";
 import Image from "next/image";
 import { getAboutPage } from "../lib/api";
 import ProfileImgSlider from "../components/ProfileImgSlider/ProfileImgSlider";
-const About = ({
-  preview,
-  coreValues,
-  myExperience,
-  title,
-  aboutSection,
-  profileImages,
-}) => {
+const About = ({ preview, coreValues, myExperience, title, aboutSection }) => {
   return (
     <>
       <style jsx>{`
@@ -26,22 +19,12 @@ const About = ({
           <h1 className={styles.aboutme_mainheading}>{title}</h1>
 
           <div>
-            {/* <div className={styles.aboutContent}> */}
             <div className={styles.imgContainer}>
               <ProfileImgSlider
-                img={aboutSection.image}
+                images={aboutSection.images}
                 content={aboutSection.content}
-                profileImages={profileImages}
               />
-              {/* <Image
-                  className={styles.aboutImg}
-                  src={aboutSection.image}
-                  width={350}
-                  height={350}
-                /> */}
             </div>
-            {/* <div className={styles.content}>{aboutSection.content}</div> */}
-            {/* </div> */}
 
             <h2 className={styles.corevalues__subheading}>
               {coreValues.title}

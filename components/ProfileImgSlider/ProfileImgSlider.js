@@ -7,7 +7,6 @@ const ProfileImgSlider = ({ images, content }) => {
 
   return (
     <div className={styles.aboutContent}>
-      {/* <Image className={styles.aboutImg} src={img} width={350} height={350} /> */}
       <div className={styles.profileImage}>
         <div style={{ marginBottom: "10px" }}>
           <Image
