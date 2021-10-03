@@ -1,6 +1,5 @@
 import styles from "./about.module.css";
 import Layout from "../components/Layout/Layout";
-import { getJSONProfileImg } from "../lib/about";
 import Image from "next/image";
 import { getAboutPage } from "../lib/api";
 import ProfileImgSlider from "../components/ProfileImgSlider/ProfileImgSlider";
@@ -75,7 +74,6 @@ const About = ({ preview, coreValues, myExperience, title, aboutSection }) => {
 export default About;
 
 export async function getStaticProps({ preview = false }) {
-  const profileImages = getJSONProfileImg();
   const { coreValues, myExperience, title, aboutSection } = await getAboutPage({
     preview,
   });
@@ -87,7 +85,6 @@ export async function getStaticProps({ preview = false }) {
       title,
       aboutSection,
       preview,
-      profileImages,
     },
   };
 }
