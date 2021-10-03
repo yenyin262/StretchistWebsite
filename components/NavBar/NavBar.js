@@ -6,12 +6,13 @@ import NavItems from "../NavItems/NavItems";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import useMobilenavmenu from "./useMobilenavmenu";
 import ToggleButton from "../ToggleButton/ToggleButton";
+import classNames from "classnames";
 
 const NavBar = () => {
   const { ref, mobileNavmenu, setMobileNavmenu } = useMobilenavmenu(false);
 
   return (
-    <div className={styles["main-nav"]}>
+    <div className={classNames(styles["main-nav"], "main-nav")}>
       <div className={styles["main-nav__logo"]}>
         <Link href="/" passHref>
           {/* <Image
