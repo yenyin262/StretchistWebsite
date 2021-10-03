@@ -20,22 +20,19 @@ const ProfileImgSlider = ({ images, content }) => {
         <div className={styles.slider}>
           {images.map((profileImage, index) => {
             return (
-              <div>
-                <Image
-                  src={profileImage.src}
-                  alt={profileImage.alt}
-                  width={55}
-                  height={55}
-                  className={
-                    index === active
-                      ? `${styles.active}`
-                      : `${styles.sliderItem}`
-                  }
-                  onClick={() => {
-                    setActive(index);
-                  }}
-                />
-              </div>
+              <Image
+                key={index}
+                src={profileImage.src}
+                alt={profileImage.alt}
+                width={55}
+                height={55}
+                className={
+                  index === active ? `${styles.active}` : `${styles.sliderItem}`
+                }
+                onClick={() => {
+                  setActive(index);
+                }}
+              />
             );
           })}
         </div>
