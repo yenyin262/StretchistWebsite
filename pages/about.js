@@ -1,4 +1,4 @@
-import styles from "./about.module.css";
+import styles from "../styles/about.module.css";
 import Layout from "../components/Layout/Layout";
 import Image from "next/image";
 import { getAboutPage } from "../lib/api";

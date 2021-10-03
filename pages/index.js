@@ -8,7 +8,7 @@ import {
   getJSONHeroData,
 } from "../lib/sections";
 import HeroImage from "../components/HeroImage/HeroImage";
-import styles from "./index.module.css";
+import styles from "../styles/index.module.css";
 import MainSection from "../components/MainSection/MainSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
 import SocialSection from "../components/SocialSection/SocialSection";

@@ -1,7 +1,7 @@
 import { getJSONStretchData } from "../lib/stretch";
 import Image from "next/image";
 import Layout from "../components/Layout/Layout";
-import styles from "./joinus.module.css";
+import styles from "../styles/joinus.module.css";
 import { getJoinUsPage } from "../lib/api";
 const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
   return (

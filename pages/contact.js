@@ -1,5 +1,5 @@
 import Layout from "../components/Layout/Layout";
-import styles from "./contact.module.css";
+import styles from "../styles/contact.module.css";
 // import { getJSONContactData } from "../lib/contact";
 import { getContactSection } from "../lib/api";
 
