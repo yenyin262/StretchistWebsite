@@ -63,11 +63,6 @@ export async function getStaticProps({ preview = false }) {
   const socialSections = await getSocialSection({ preview });
   const sections = await getIntroductionSection({ preview });
 
-  console.log(
-    "🚀 ~ file: index.js ~ line 52 ~ getStaticProps ~ sections",
-    testimonials
-  );
-
   const { heroImage, title, subtitle } = await getHeroImage({ preview });
 
   return {
