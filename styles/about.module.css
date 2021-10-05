@@ -4,18 +4,16 @@
   margin: 32px;
 }
 
-/* .aboutContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 35px;
-  text-align: justify;
-} */
-
 .imgContainer {
-  margin-bottom: 25px;
+  padding: 36px;
 }
 
+.contentContainer {
+  padding: 36px;
+}
+.experienceContentContainer {
+  padding: 36px 36px 100px;
+}
 .aboutImg {
   border-radius: 45px;
 }
@@ -34,19 +32,14 @@
   align-items: center;
   justify-content: space-between;
   max-width: 375px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 .corevalue__label {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .description {
-  margin-bottom: 15px;
   text-align: center;
-}
-
-.myexperienceItem {
-  margin-bottom: 15px;
 }
 
 .numbers {
@@ -68,12 +61,18 @@
   .myexperience__list {
     display: flex;
     align-items: flex-start;
-    padding: 50px;
+    padding: 50px 0;
   }
 
   .corevalueItem,
   .myexperienceItem {
-    width: 20%;
+    max-width: 345px;
+    padding: 19px;
+    margin: 0 auto;
+  }
+
+  .myexperienceItem {
+    max-width: 200px;
   }
   .numbers {
     font-size: 40px;

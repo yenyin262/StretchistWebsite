@@ -32,4 +32,5 @@
   padding: 15px;
   background: rgba(204, 204, 204, 0.7);
   border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
