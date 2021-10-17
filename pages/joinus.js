@@ -3,7 +3,11 @@ import Image from "next/image";
 import Layout from "../components/Layout/Layout";
 import styles from "../styles/joinus.module.css";
 import { getJoinUsPage } from "../lib/api";
+import { useInView } from "react-intersection-observer";
 const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
+  const { ref, inView } = useInView({
+    rootMargin: "-100px 0px 0px 0px",
+  });
   return (
     <>
       <style jsx>{`
@@ -20,8 +24,8 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
         }
       `}</style>
       <div className={`Container`}>
-        <Layout preview={preview}>
-          <div className={styles["stretchfacts-test"]}>
+        <Layout preview={preview} isNavBarScrolled={!inView} stickyNavBar>
+          <div ref={ref} className={styles["stretchfacts-test"]}>
             <h3 className={styles.heading}>{heading}</h3>
             <video loop autoPlay className={styles.video}>
               <source src={videoClip} type="video/webm" />

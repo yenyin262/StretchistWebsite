@@ -3,10 +3,20 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  /* position: fixed; */
   position: relative;
   z-index: 1;
   width: 100%;
+}
+
+.sticky {
+  position: fixed;
+}
+
+.scrolled {
+  color: rgb(0, 9, 128);
+  /* background-color: rgba(204, 204, 204, 1.7); */
+  background-color: #1d5d44;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 
 .main-nav__logo {
@@ -31,11 +41,12 @@
   }
 
   .main-nav {
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
   }
 
   .main-nav__logo {
-    width: 180px;
+    /* width: 180px; */
+
     align-self: center;
   }
 }

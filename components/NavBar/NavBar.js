@@ -8,11 +8,19 @@ import useMobilenavmenu from "./useMobilenavmenu";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import classNames from "classnames";
 
-const NavBar = () => {
+const NavBar = ({ isScrolled, sticky = false }) => {
   const { ref, mobileNavmenu, setMobileNavmenu } = useMobilenavmenu(false);
 
   return (
-    <div className={classNames(styles["main-nav"], "main-nav")}>
+    <div
+      className={classNames(
+        styles["main-nav"],
+        { [styles["sticky"]]: sticky },
+        {
+          [styles["scrolled"]]: isScrolled,
+        }
+      )}
+    >
       <div className={styles["main-nav__logo"]}>
         <Link href="/" passHref>
           {/* <Image

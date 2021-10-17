@@ -35,8 +35,3 @@ a {
   margin: 0;
   padding: 0;
 }
-.nav-scrolled {
-  color: rgb(0, 9, 128);
-  background-color: hotpink;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-}

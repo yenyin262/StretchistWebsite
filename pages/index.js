@@ -21,6 +21,7 @@ import {
   getImageCollageSection,
 } from "../lib/api";
 import Preview from "../components/Preview";
+import { useInView } from "react-intersection-observer";
 
 const Home = ({
   preview,
@@ -32,12 +33,19 @@ const Home = ({
   title,
   heroImage,
 }) => {
+  const { ref, inView } = useInView({
+    rootMargin: "-130px 0px 0px 0px",
+  });
+
   return (
     <Preview enabled={preview}>
       <div className={styles.home}>
-        <HeroImage subtitle={subtitle} title={title} heroImage={heroImage}>
-          <NavBar />
-        </HeroImage>
+        <div ref={ref}>
+          <HeroImage subtitle={subtitle} title={title} heroImage={heroImage}>
+            <NavBar isScrolled={!inView} sticky />
+          </HeroImage>
+        </div>
+
         {sections.map((section, index) => (
           <MainSection data={section} key={index} />
         ))}
