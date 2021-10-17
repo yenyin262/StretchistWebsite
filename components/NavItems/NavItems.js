@@ -39,6 +39,7 @@ const NavItems = () => {
       <a
         href="https://calendly.com/thestretchist/book-your-session?fbclid=IwAR0NX0pjoBOm9jYY51qkMHu2lwNtfncb6yWV2vGmwTSKvtNrJ21k6D65XCg"
         target="_blank"
+        rel="noreferrer"
         className={classNames(
           styles["main-nav__link"],
           "nav-link-dynamic-color",
