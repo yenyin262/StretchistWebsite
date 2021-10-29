@@ -1,16 +1,13 @@
 import socialMediaIcons from "../../data/socialMediaIcons.json";
 import Link from "next/link";
-import Facebook from "../Facebook";
-import Twitter from "../Twitter";
-import Pinterest from "../Pinterest";
+
 import Instagram from "../Instagram";
 import styles from "./Icons.module.css";
+import BookBtn from "../BookBtn/BookBtn";
 // create an object
 const ICONS = {
-  facebook: <Facebook />,
   instagram: <Instagram />,
-  twitter: <Twitter />,
-  pinterest: <Pinterest />,
+  bookbtn: <BookBtn />,
 };
 
 const Icons = ({}) => {

@@ -1,15 +1,11 @@
 [
   {
-    "type": "facebook",
-    "link": "/"
-  },
-
-  {
     "type": "instagram",
     "link": "https://www.instagram.com/thestretchist/"
   },
+
   {
-    "type": "twitter",
-    "link": "/"
+    "type": "bookbtn",
+    "link": "https://calendly.com/thestretchist/book-your-session"
   }
 ]
