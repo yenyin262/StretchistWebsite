@@ -35,20 +35,6 @@ const NavItems = () => {
           </Link>
         );
       })}
-
-      <a
-        href="https://calendly.com/thestretchist/book-your-session"
-        target="_blank"
-        rel="noreferrer"
-        className={classNames(
-          styles["main-nav__link"],
-          "nav-link-dynamic-color",
-          "nav-joinus-link-dynamic-color"
-        )}
-      >
-        {" "}
-        Book Now
-      </a>
     </div>
   );
 };
