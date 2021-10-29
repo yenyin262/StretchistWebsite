@@ -22,6 +22,7 @@ import {
 } from "../lib/api";
 import Preview from "../components/Preview";
 import { useInView } from "react-intersection-observer";
+import DrawerTab from "../components/DrawerTab/DrawerTab";
 
 const Home = ({
   preview,
@@ -36,6 +37,7 @@ const Home = ({
   const { ref, inView } = useInView({
     rootMargin: "-130px 0px 0px 0px",
   });
+  const { ref: footerref, inView: footerinView } = useInView({});
 
   return (
     <Preview enabled={preview}>
@@ -52,7 +54,10 @@ const Home = ({
         <SocialSection socialSections={socialSections} />
         <TestimonialSection testimonials={testimonials} />
         <ImgCollageSection imgCollages={imgCollages} />
-        <Footer />
+        <DrawerTab show={!footerinView} />
+        <div ref={footerref}>
+          <Footer />
+        </div>
       </div>
     </Preview>
   );

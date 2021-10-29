@@ -1,0 +1,28 @@
+.promo-tab {
+  background: transparent;
+  bottom: -50px;
+  position: fixed;
+  transition: all 0.5s ease;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+}
+
+.drawer-btn {
+  border: none;
+  background: hsl(156deg 50% 48%);
+  padding: 10px 1.5em;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.15s ease-out;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.show {
+  bottom: 0;
+  visibility: visible;
+}

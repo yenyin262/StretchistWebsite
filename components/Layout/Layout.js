@@ -3,11 +3,13 @@ import NavBar from "../NavBar/NavBar";
 import classNames from "classnames";
 import Preview from "../Preview";
 import { useInView } from "react-intersection-observer";
+import DrawerTab from "../DrawerTab/DrawerTab";
 
 // passing preview in this component so that it simulataneously exists in the components that use the Layout component.
 const Layout = ({
   preview = false,
   isNavBarScrolled = false,
+  showDrawerTab = true,
   stickyNavBar = false,
   children,
 }) => {
@@ -28,6 +30,7 @@ const Layout = ({
         <NavBar isScrolled={isNavBarScrolled} sticky={stickyNavBar} />
       </div>
       {children}
+      <DrawerTab show={showDrawerTab} />
       <Footer />
     </Preview>
   );
