@@ -22,10 +22,3 @@ export default function DrawerTab({ show }) {
     </div>
   );
 }
-
-// create a variable of an object
-//let cat = {
-//   color:"pink"
-// }
-
-// cat[gender] = "male"
