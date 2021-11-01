@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const MainSection = ({ data }) => {
+  console.log(data, "data data");
   return (
     <>
       <style jsx>{`
@@ -33,13 +34,21 @@ const MainSection = ({ data }) => {
       <div className={styles["main-section-wrapper"]}>
         <div className={styles["main-section"]}>
           <div className={styles["main-section__img-card"]}>
-            <Image
-              src={data.image}
-              alt={data.alt}
-              width={370}
-              height={370}
-              layout="responsive"
-            />
+            {data.media.type === "image" && (
+              <Image
+                src={data.media.src}
+                alt={data.media.alt}
+                width={370}
+                height={370}
+                layout="responsive"
+              />
+            )}
+            {data.media.type === "video" && (
+              <video loop autoPlay className={styles.video}>
+                <source src={data.media.src} type="video/webm" />
+                Sorry, your browser doesnt support embedded videos.
+              </video>
+            )}
           </div>
 
           <div className={styles["main-section__description-card"]}>
