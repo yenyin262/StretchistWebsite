@@ -4,10 +4,15 @@ import Layout from "../components/Layout/Layout";
 import styles from "../styles/joinus.module.css";
 import { getJoinUsPage } from "../lib/api";
 import { useInView } from "react-intersection-observer";
+// qm to as stas when calling hook do we still need the inView?
 const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
   const { ref, inView } = useInView({
     rootMargin: "-100px 0px 0px 0px",
   });
+  const { ref: footerref, inView: footerinView } = useInView({
+    // rootMargin: "0px 0px 0px 45px",
+  });
+
   return (
     <>
       <style jsx>{`
@@ -24,7 +29,13 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
         }
       `}</style>
       <div className={`Container`}>
-        <Layout preview={preview} isNavBarScrolled={!inView} stickyNavBar>
+        <Layout
+          preview={preview}
+          isNavBarScrolled={!inView}
+          stickyNavBar
+          showDrawerTab={!footerinView}
+          hasDrawerTab={true}
+        >
           <div ref={ref} className={styles["stretchfacts-test"]}>
             <h3 className={styles.heading}>{heading}</h3>
             <video loop autoPlay className={styles.video}>
@@ -62,7 +73,10 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
                         <h3 className={styles["stretch-content_title"]}>
                           {fact.title}
                         </h3>
-                        <p className={styles["stretch-content_content"]}>
+                        <p
+                          ref={footerref}
+                          className={styles["stretch-content_content"]}
+                        >
                           {fact.content}
                         </p>
                       </div>
