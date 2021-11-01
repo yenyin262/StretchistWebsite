@@ -36,6 +36,9 @@
   padding: 70px 30px;
 }
 
+.video {
+  width: 100%;
+}
 @media (min-width: 1024px) {
   .main-section-wrapper {
     background: #fff;
@@ -83,9 +86,5 @@
   .main-section__content,
   .main-section__button {
     text-align: left;
-  }
-
-  .video {
-    width: 100%;
   }
 }
