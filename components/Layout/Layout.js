@@ -11,6 +11,7 @@ const Layout = ({
   isNavBarScrolled = false,
   showDrawerTab = true,
   stickyNavBar = false,
+  hasDrawerTab = false,
   children,
 }) => {
   return (
@@ -30,7 +31,7 @@ const Layout = ({
         <NavBar isScrolled={isNavBarScrolled} sticky={stickyNavBar} />
       </div>
       {children}
-      <DrawerTab show={showDrawerTab} />
+      {hasDrawerTab && <DrawerTab show={showDrawerTab} />}
       <Footer />
     </Preview>
   );
