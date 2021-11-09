@@ -29,7 +29,6 @@ const NavItems = () => {
                 "nav-joinus-link-dynamic-color"
               )}
             >
-              {" "}
               {item.title}
             </a>
           </Link>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Instagram from "../Instagram";
 import styles from "./Icons.module.css";
 import BookBtn from "../BookBtn/BookBtn";
-// create an object
+
 const ICONS = {
   instagram: <Instagram />,
   bookbtn: <BookBtn />,
