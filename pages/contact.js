@@ -5,9 +5,7 @@ import { getContactSection } from "../lib/api";
 import { useInView } from "react-intersection-observer";
 
 const Contact = ({ title, message, email, preview }) => {
-  const { ref: footerref, inView: footerinView } = useInView({
-    rootMargin: "0px 0px 0px 0px",
-  });
+  const { ref: footerref, inView: footerinView } = useInView({});
   return (
     <>
       <style jsx>{`
@@ -22,38 +20,22 @@ const Contact = ({ title, message, email, preview }) => {
         showDrawerTab={!footerinView}
         hasDrawerTab={true}
       >
-        <div
-          style={{
-            margin: "20px",
-            height: "50vh",
-          }}
-        >
+        <div className={styles[`contact-container`]}>
           <h2 className={styles.heading}>{title}</h2>
-          <div
-            style={{
-              width: "100%",
-              marginTop: "20px",
-              backgroundColor: "#8fd4c5",
-              maxWidth: "500px",
-              margin: " 0 auto",
-            }}
-          >
-            <p
-              style={{
-                padding: "30px",
-                textAlign: "center",
-                lineHeight: "2",
-              }}
-            >
-              {message} <span style={{ fontWeight: "bold" }}> {email} </span>
+          <div className={styles[`contact-content`]}>
+            <p className={styles.message}>
+              {message} <span className={styles.email}> {email} </span>
               <a
                 href="https://calendly.com/thestretchist/book-your-session"
                 target="_blank"
                 rel="noreferrer"
+                className={styles.as}
               >
-                <div className={styles[`drawer-btn`]}>
-                  Click here to get stretched!
-                </div>
+                <span
+                  data-content="  Click here to get stretched!"
+                  aria-hidden="true"
+                ></span>{" "}
+                Click here to get stretched!
               </a>
             </p>
           </div>
