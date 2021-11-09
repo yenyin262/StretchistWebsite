@@ -44,7 +44,7 @@ const MainSection = ({ data }) => {
               />
             )}
             {data.media.type === "video" && (
-              <video loop autoPlay className={styles.video}>
+              <video loop autoPlay muted className={styles.video}>
                 <source src={data.media.src} type="video/webm" />
                 Sorry, your browser doesnt support embedded videos.
               </video>
