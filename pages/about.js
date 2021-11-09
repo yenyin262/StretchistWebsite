@@ -3,7 +3,10 @@ import Layout from "../components/Layout/Layout";
 import Image from "next/image";
 import { getAboutPage } from "../lib/api";
 import ProfileImgSlider from "../components/ProfileImgSlider/ProfileImgSlider";
+import { useInView } from "react-intersection-observer";
+
 const About = ({ preview, coreValues, myExperience, title, aboutSection }) => {
+  const { ref: footerref, inView: footerinView } = useInView({});
   return (
     <>
       <style jsx>{`
@@ -13,7 +16,11 @@ const About = ({ preview, coreValues, myExperience, title, aboutSection }) => {
           }
         }
       `}</style>
-      <Layout preview={preview}>
+      <Layout
+        preview={preview}
+        showDrawerTab={!footerinView}
+        hasDrawerTab={true}
+      >
         <h1 className={styles.aboutme_mainheading}>{title}</h1>
         <div className={styles.imgContainer}>
           <ProfileImgSlider
@@ -58,6 +65,7 @@ const About = ({ preview, coreValues, myExperience, title, aboutSection }) => {
             })}
           </div>
         </div>
+        <div ref={footerref}></div>
       </Layout>
     </>
   );

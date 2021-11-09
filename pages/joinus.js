@@ -9,9 +9,7 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
   const { ref, inView } = useInView({
     rootMargin: "-100px 0px 0px 0px",
   });
-  const { ref: footerref, inView: footerinView } = useInView({
-    // rootMargin: "0px 0px 0px 45px",
-  });
+  const { ref: footerref, inView: footerinView } = useInView({});
 
   return (
     <>
@@ -73,10 +71,7 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
                         <h3 className={styles["stretch-content_title"]}>
                           {fact.title}
                         </h3>
-                        <p
-                          ref={footerref}
-                          className={styles["stretch-content_content"]}
-                        >
+                        <p className={styles["stretch-content_content"]}>
                           {fact.content}
                         </p>
                       </div>
@@ -86,6 +81,7 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
               );
             })}
           </div>
+          <div ref={footerref}></div>
         </Layout>
       </div>
     </>
