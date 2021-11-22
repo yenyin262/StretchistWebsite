@@ -1,5 +1,6 @@
 import classnames from "classnames";
 import styles from "./SocialSectionItem.module.css";
+import PropTypes from "prop-types";
 
 const SocialSectionItem = ({ data }) => {
   return (
@@ -20,3 +21,7 @@ const SocialSectionItem = ({ data }) => {
 };
 
 export default SocialSectionItem;
+
+SocialSectionItem.propTypes = {
+  data: PropTypes.object,
+};

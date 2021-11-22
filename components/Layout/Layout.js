@@ -4,6 +4,7 @@ import classNames from "classnames";
 import Preview from "../Preview";
 import { useInView } from "react-intersection-observer";
 import DrawerTab from "../DrawerTab/DrawerTab";
+import PropTypes from "prop-types";
 
 // passing preview in this component so that it simulataneously exists in the components that use the Layout component.
 const Layout = ({
@@ -38,3 +39,12 @@ const Layout = ({
 };
 
 export default Layout;
+
+Layout.propTypes = {
+  preview: PropTypes.bool,
+  isNavBarScrolled: PropTypes.bool,
+  showDrawerTab: PropTypes.bool,
+  stickyNavBar: PropTypes.bool,
+  hasDrawerTab: PropTypes.bool,
+  children: PropTypes.array,
+};

@@ -1,6 +1,8 @@
 import styles from "./HeroImage.module.css";
 import classnames from "classnames";
 import Image from "next/image";
+
+import PropTypes from "prop-types";
 const HeroImage = ({ children, heroImage, title, subtitle }) => {
   return (
     <>
@@ -33,3 +35,10 @@ const HeroImage = ({ children, heroImage, title, subtitle }) => {
 };
 
 export default HeroImage;
+
+HeroImage.propTypes = {
+  children: PropTypes.object,
+  heroImage: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+};

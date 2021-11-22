@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./ImgItem.module.css";
+import PropTypes from "prop-types";
 
 const ImgItem = ({ data }) => {
   return (
@@ -16,3 +17,7 @@ const ImgItem = ({ data }) => {
 };
 
 export default ImgItem;
+
+ImgItem.propTypes = {
+  data: PropTypes.object,
+};

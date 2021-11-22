@@ -1,9 +1,9 @@
 import styles from "./MainSection.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import PropTypes from "prop-types";
 
 const MainSection = ({ data }) => {
-  console.log(data, "data data");
   return (
     <>
       <style jsx>{`
@@ -71,3 +71,7 @@ const MainSection = ({ data }) => {
 };
 
 export default MainSection;
+
+MainSection.propTypes = {
+  data: PropTypes.object,
+};

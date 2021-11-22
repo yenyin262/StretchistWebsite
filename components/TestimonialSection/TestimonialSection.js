@@ -1,5 +1,6 @@
 import styles from "./TestimonialSection.module.css";
 import TestimonialItem from "../TestimonialItem/TestimonialItem";
+import PropTypes from "prop-types";
 
 const TestimonialSection = ({ testimonials }) => {
   return (
@@ -15,3 +16,7 @@ const TestimonialSection = ({ testimonials }) => {
 };
 
 export default TestimonialSection;
+
+TestimonialSection.propTypes = {
+  testimonials: PropTypes.object,
+};

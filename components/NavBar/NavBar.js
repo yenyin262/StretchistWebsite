@@ -7,6 +7,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 import useMobilenavmenu from "./useMobilenavmenu";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import classNames from "classnames";
+import PropTypes from "prop-types";
 
 const NavBar = ({ isScrolled, sticky = false }) => {
   const { ref, mobileNavmenu, setMobileNavmenu } = useMobilenavmenu(false);
@@ -58,3 +59,8 @@ const NavBar = ({ isScrolled, sticky = false }) => {
 };
 
 export default NavBar;
+
+NavBar.propTypes = {
+  isScrolled: PropTypes.bool,
+  sticky: PropTypes.bool,
+};

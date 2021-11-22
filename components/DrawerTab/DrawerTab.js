@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./DrawerTab.module.css";
 import classNames from "classnames";
+import PropTypes from "prop-types";
 
 export default function DrawerTab({ show }) {
   return (
@@ -22,3 +23,7 @@ export default function DrawerTab({ show }) {
     </div>
   );
 }
+
+DrawerTab.propTypes = {
+  show: PropTypes.bool,
+};

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./TestimonialItem.module.css";
+import PropTypes from "prop-types";
 
 const TestimonialItem = ({ data }) => {
   return (
@@ -22,3 +23,7 @@ const TestimonialItem = ({ data }) => {
 };
 
 export default TestimonialItem;
+
+TestimonialItem.propTypes = {
+  data: PropTypes.object,
+};

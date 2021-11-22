@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "./ProfileImgSlider.module.css";
+import PropTypes from "prop-types";
 
 const ProfileImgSlider = ({ images, content }) => {
   const [active, setActive] = useState(0);
@@ -46,3 +47,8 @@ const ProfileImgSlider = ({ images, content }) => {
 };
 
 export default ProfileImgSlider;
+
+ProfileImgSlider.propTypes = {
+  images: PropTypes.object,
+  content: PropTypes.string,
+};
