@@ -16,9 +16,9 @@ const Icons = ({}) => {
       {socialMediaIcons.map((icon, index) => {
         const IconComponent = ICONS[icon.type];
         return (
-          <Link href={icon.link} key={index}>
-            <a>{IconComponent}</a>
-          </Link>
+          <a href={icon.link} target="_blank" rel="noreferrer" key={index}>
+            {IconComponent}
+          </a>
         );
       })}
     </div>
