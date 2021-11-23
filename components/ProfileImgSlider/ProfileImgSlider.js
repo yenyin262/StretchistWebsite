@@ -49,6 +49,6 @@ const ProfileImgSlider = ({ images, content }) => {
 export default ProfileImgSlider;
 
 ProfileImgSlider.propTypes = {
-  images: PropTypes.object,
+  images: PropTypes.array,
   content: PropTypes.string,
 };
