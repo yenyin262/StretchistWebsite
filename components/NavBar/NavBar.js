@@ -23,8 +23,9 @@ const NavBar = ({ isScrolled, sticky = false }) => {
       )}
     >
       <div className={styles["main-nav__logo"]}>
-        <Link href="/" passHref>
-          {/* <Image
+        <Link href="/">
+          <a>
+            {/* <Image
             src={logo}
             alt="Logo"
             layout="responsive"
@@ -32,14 +33,15 @@ const NavBar = ({ isScrolled, sticky = false }) => {
             height={40}
           /> */}
 
-          <Image
-            src="/TheStretchistLogo.png"
-            alt="Logo"
-            layout="responsive"
-            width={700}
-            height={378}
-            color={"black"}
-          />
+            <Image
+              src="/TheStretchistLogo.png"
+              alt="Logo"
+              layout="responsive"
+              width={700}
+              height={378}
+              color={"black"}
+            />
+          </a>
         </Link>
       </div>
       <div ref={ref}>
