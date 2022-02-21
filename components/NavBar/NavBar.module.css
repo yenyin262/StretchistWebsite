@@ -11,11 +11,13 @@
 .sticky {
   position: fixed;
 }
-
+/* .main-nav-homepage {
+  background: rgb(59 58 64 / 50%);
+} */
 .scrolled {
   color: rgb(0, 9, 128);
-  /* background-color: rgba(204, 204, 204, 1.7); */
-  background-color: #1d5d44;
+  /* background-color: #1d5d44; */
+  background-color: #fff;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 

@@ -16,17 +16,18 @@ const navItems = [
   { title: "Contact", link: "/contact" },
 ];
 
-const NavItems = () => {
+const NavItems = ({ linkColor = "white", isFilled = false }) => {
   return (
     <div className={styles["main-nav__list"]}>
       {navItems.map((item, index) => {
         return (
           <Link href={item.link} key={index}>
             <a
+              style={{ color: linkColor }}
               className={classNames(
                 styles["main-nav__link"],
                 "nav-link-dynamic-color",
-                "nav-joinus-link-dynamic-color"
+                { [styles.filled]: isFilled }
               )}
             >
               {item.title}

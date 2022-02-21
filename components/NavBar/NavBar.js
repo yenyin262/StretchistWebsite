@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./NavBar.module.css";
-import logo from "../../public/logo.svg";
 import Image from "next/image";
 import NavItems from "../NavItems/NavItems";
 import MobileMenu from "../MobileMenu/MobileMenu";
@@ -8,12 +7,20 @@ import useMobilenavmenu from "./useMobilenavmenu";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import classNames from "classnames";
 import PropTypes from "prop-types";
+import logo from "../../public/StretchistFinal.svg";
 
-const NavBar = ({ isScrolled, sticky = false }) => {
+const NavBar = ({
+  isScrolled,
+  navLinkColor,
+  isNavLinkFilled,
+  navBgColor = "#e0f2f1",
+  sticky = false,
+}) => {
   const { ref, mobileNavmenu, setMobileNavmenu } = useMobilenavmenu(false);
 
   return (
     <div
+      style={{ background: navBgColor }}
       className={classNames(
         styles["main-nav"],
         { [styles["sticky"]]: sticky },
@@ -34,11 +41,14 @@ const NavBar = ({ isScrolled, sticky = false }) => {
           /> */}
 
             <Image
-              src="/TheStretchistLogo.png"
+              src={logo}
+              // src="/TheStretchistLogo.png"
               alt="Logo"
               layout="responsive"
-              width={700}
-              height={378}
+              width={200}
+              height={135}
+              // width={25}
+              // height={17}
               color={"black"}
             />
           </a>
@@ -55,7 +65,7 @@ const NavBar = ({ isScrolled, sticky = false }) => {
         {mobileNavmenu && <MobileMenu />}
       </div>
 
-      <NavItems />
+      <NavItems linkColor={navLinkColor} isFilled={isNavLinkFilled} />
     </div>
   );
 };

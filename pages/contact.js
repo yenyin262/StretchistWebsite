@@ -7,42 +7,36 @@ import { useInView } from "react-intersection-observer";
 const Contact = ({ title, message, email, preview }) => {
   const { ref: footerref, inView: footerinView } = useInView({});
   return (
-    <>
-      <style jsx>{`
-        @media (min-width: 1024px) {
-          :global(.nav-link-dynamic-color) {
-            color: #1d5d44;
-          }
-        }
-      `}</style>
-      <Layout
-        preview={preview}
-        showDrawerTab={!footerinView}
-        hasDrawerTab={true}
-      >
-        <div className={styles[`contact-container`]}>
-          <h2 className={styles.heading}>{title}</h2>
-          <div className={styles[`contact-content`]}>
-            <p className={styles.message}>
-              {message} <span className={styles.email}> {email} </span>
-              <a
-                href="https://calendly.com/thestretchist/book-your-session"
-                target="_blank"
-                rel="noreferrer"
-                className={styles.as}
-              >
-                <span
-                  data-content="  Click here to get stretched!"
-                  aria-hidden="true"
-                ></span>{" "}
-                Click here to get stretched!
-              </a>
-            </p>
-          </div>
+    <Layout
+      navBgColor="#e0f2f1"
+      isNavBarFilled={false}
+      navLinkColor="#1d5d44"
+      preview={preview}
+      showDrawerTab={!footerinView}
+      hasDrawerTab={true}
+    >
+      <div className={styles[`contact-container`]}>
+        <h2 className={styles.heading}>{title}</h2>
+        <div className={styles[`contact-content`]}>
+          <p className={styles.message}>
+            {message} <span className={styles.email}> {email} </span>
+            <a
+              href="https://calendly.com/thestretchist/book-your-session"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.as}
+            >
+              <span
+                data-content="  Click here to get stretched!"
+                aria-hidden="true"
+              ></span>{" "}
+              Click here to get stretched!
+            </a>
+          </p>
         </div>
-        <div ref={footerref}></div>
-      </Layout>
-    </>
+      </div>
+      <div ref={footerref}></div>
+    </Layout>
   );
 };
 

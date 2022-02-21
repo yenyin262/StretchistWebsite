@@ -9,28 +9,25 @@ import PropTypes from "prop-types";
 // passing preview in this component so that it simulataneously exists in the components that use the Layout component.
 const Layout = ({
   preview = false,
+  isNavBarFilled,
   isNavBarScrolled = false,
   showDrawerTab = true,
   stickyNavBar = false,
   hasDrawerTab = false,
   children,
+  navLinkColor,
+  navBgColor,
 }) => {
   return (
     <Preview enabled={preview}>
-      <style jsx>{`
-        .navBarContainer {
-          background-color: #e0f2f1;
-        }
-      `}</style>
-      <div
-        className={classNames(
-          "navBarContainer",
-          "joinUsContainer",
-          "observer-test"
-        )}
-      >
-        <NavBar isScrolled={isNavBarScrolled} sticky={stickyNavBar} />
-      </div>
+      <NavBar
+        navLinkColor={navLinkColor}
+        isNavLinkFilled={isNavBarFilled}
+        isScrolled={isNavBarScrolled}
+        sticky={stickyNavBar}
+        navBgColor={navBgColor}
+      />
+
       {children}
       {hasDrawerTab && <DrawerTab show={showDrawerTab} />}
       <Footer />

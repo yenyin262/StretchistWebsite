@@ -34,7 +34,7 @@ const Home = ({
   title,
   heroImage,
 }) => {
-  const { ref, inView } = useInView({
+  const { ref, inView: isScrolled } = useInView({
     rootMargin: "-130px 0px 0px 0px",
   });
   const { ref: footerref, inView: footerinView } = useInView({});
@@ -44,10 +44,19 @@ const Home = ({
       <div className={styles.home}>
         <div ref={ref}>
           <HeroImage subtitle={subtitle} title={title} heroImage={heroImage}>
-            <NavBar isScrolled={!inView} sticky />
+            <NavBar
+              navBgColor={
+                isScrolled ? "rgb(59 58 64 / 50%)" : "rgb(224, 242, 241)"
+              }
+              isNavLinkFilled={false}
+              isScrolled={!isScrolled}
+              navLinkColor={isScrolled ? "#e8f0f2" : "#000"}
+              sticky
+            />
           </HeroImage>
         </div>
 
+        {/* map through the sections  */}
         {sections.map((section, index) => (
           <MainSection data={section} key={index} />
         ))}
@@ -65,6 +74,7 @@ const Home = ({
 
 export default Home;
 
+// assigning the value of preview to false by default
 export async function getStaticProps({ preview = false }) {
   // const sections = getJSONSections();
   // const socialSections = getJSONSocialSections();
@@ -74,6 +84,10 @@ export async function getStaticProps({ preview = false }) {
   const imgCollages = await getImageCollageSection({ preview });
   // const { heroImage, title, subtitle } = getJSONHeroData();
   const socialSections = await getSocialSection({ preview });
+
+  // define a variable assigning the result of the getIntroductionSection function call which returns
+  // the data from the API.
+  // When the preview data is assigned to false it will show the original data.
   const sections = await getIntroductionSection({ preview });
 
   const { heroImage, title, subtitle } = await getHeroImage({ preview });
