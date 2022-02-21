@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import Logo from "../Logo";
+import Logo from "../../public/StretchistFinal.svg";
 import FooterNavItems from "../FooterNavItems/FooterNavItems";
 import Image from "next/image";
 
@@ -10,11 +10,11 @@ const Footer = () => {
       <div className={styles.footer__content}>
         <div className={styles.footer__logo}>
           <Image
-            src="/TheStretchistLogo.png"
+            src={Logo}
             alt="Logo"
             layout="responsive"
             width={700}
-            height={378}
+            height={474}
             color={"black"}
           />
         </div>
