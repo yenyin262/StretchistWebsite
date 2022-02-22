@@ -15,7 +15,6 @@ const Footer = () => {
             layout="responsive"
             width={700}
             height={474}
-            color={"black"}
           />
         </div>
         <FooterNavItems />
