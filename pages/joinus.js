@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout";
 import styles from "../styles/joinus.module.css";
 import { getJoinUsPage } from "../lib/api";
 import { useInView } from "react-intersection-observer";
+import StretchContent from "../components/StretchContent/StretchContent";
 // qm to as stas when calling hook do we still need the inView?
 const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
   const { ref, inView } = useInView({
@@ -40,7 +41,12 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
           <h1> {whyStretchSection.title}</h1>
         </div>
 
-        <div>
+        {/* map through the sections  */}
+        {whyStretchSection.facts.map((fact, index) => {
+          return <StretchContent fact={fact} key={index} />;
+        })}
+
+        {/* <div>
           {whyStretchSection.facts.map((fact, index) => {
             return (
               <div key={index} className={styles["stretchfacts-list"]}>
@@ -69,7 +75,7 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
               </div>
             );
           })}
-        </div>
+        </div> */}
         <div ref={footerref}></div>
       </Layout>
     </div>
