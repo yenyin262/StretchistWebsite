@@ -6,6 +6,11 @@
   background: #dad7cd;
 }
 
+.main-section-wrapper .main-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .main-section__title {
   font-size: 36px;
   font-weight: 700;
@@ -38,16 +43,18 @@
 
 .video {
   width: 100%;
+  display: block;
 }
 @media (min-width: 1024px) {
   .main-section-wrapper {
     background: #fff;
-    padding: 40px 60px 40px 40px;
+    padding: 40px 60px 80px 40px;
   }
 
   .main-section-wrapper:nth-child(even) {
     flex-direction: row;
-    padding: 40px 40px 40px 60px;
+    /* padding: 40px 40px 40px 60px; */
+    padding: 80px 40px 40px 60px;
   }
 
   .main-section-wrapper .main-section {
