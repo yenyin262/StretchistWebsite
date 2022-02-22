@@ -42,12 +42,19 @@
 @media (min-width: 1024px) {
   .main-section-wrapper {
     background: #fff;
-    padding: 40px 60px 40px 40px;
+    /* padding: 40px 60px 40px 40px; */
+    padding: 40px 60px 80px 40px;
   }
 
   .main-section-wrapper:nth-child(even) {
     flex-direction: row;
-    padding: 40px 40px 40px 60px;
+    /* padding: 40px 40px 40px 60px; */
+    padding: 80px 40px 80px 60px;
+  }
+  .main-section-wrapper:last-child {
+    /* flex-direction: row; */
+    /* padding: 40px 40px 40px 60px; */
+    /* padding: 80px 40px 80px 60px; */
   }
 
   .main-section-wrapper .main-section {
