@@ -1,9 +1,14 @@
 .imageCollage__item {
-  width: 50%;
+  width: 49%;
+  margin: 2px;
+  /* width: 50%; */
 }
 
 @media (min-width: 1024px) {
   .imageCollage__item {
     width: 25%;
+    margin: 0;
+    /* width: 24.8%;
+    margin: 1px; */
   }
 }
