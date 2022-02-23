@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const TestimonialItem = ({ data }) => {
   return (
     <div className={styles.testimonial__item}>
-      <div>
+      <div className={styles.testimonial__imgContainer}>
         <Image
           className={styles.testimonial__img}
           src={data.image}
@@ -14,10 +14,10 @@ const TestimonialItem = ({ data }) => {
           alt={data.alt}
         />
       </div>
-
-      <div className={styles.testimonial__item__content}>{data.content}</div>
       <div className={styles.testimonial__item__name}>{data.name}</div>
       <div className={styles.testimonial__item__position}>{data.position}</div>
+
+      <div className={styles.testimonial__item__content}>{data.content}</div>
     </div>
   );
 };
