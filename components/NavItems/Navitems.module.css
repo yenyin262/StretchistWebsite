@@ -31,5 +31,6 @@ a.main-nav__link.filled {
 @media (min-width: 1024px) {
   .main-nav__list {
     display: flex;
+    gap: 20px;
   }
 }
