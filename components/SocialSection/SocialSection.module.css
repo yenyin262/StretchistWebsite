@@ -1,5 +1,6 @@
 @media (min-width: 1024px) {
   .social-section {
     display: flex;
+    margin-bottom: 6px;
   }
 }
