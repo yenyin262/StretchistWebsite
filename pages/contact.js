@@ -18,7 +18,7 @@ const Contact = ({ title, message, email, preview }) => {
       <div className={styles[`contact-container`]}>
         <h2 className={styles.heading}>{title}</h2>
         <div className={styles[`contact-content`]}>
-          <p className={styles.message}>
+          <div className={styles.message}>
             {message} <span className={styles.email}> {email} </span>
             <a
               href="https://calendly.com/thestretchist/book-your-session"
@@ -32,7 +32,7 @@ const Contact = ({ title, message, email, preview }) => {
               ></span>{" "}
               Click here to get stretched!
             </a>
-          </p>
+          </div>
         </div>
       </div>
       <div ref={footerref}></div>
