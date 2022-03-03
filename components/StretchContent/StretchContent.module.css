@@ -10,26 +10,16 @@
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  font-family: Fraunces;
-  font-weight: 700;
+  font-family: var(--st-text-font-family);
+  font-weight: 500;
 }
 
 .main-section__content {
-  font-family: barlow;
-  font-weight: 400;
+  font-family: var(--st-text-font-family);
+  font-weight: 300;
   padding: 35px 0px;
   line-height: 25px;
   text-align: center;
-}
-
-.main-section__button {
-  color: "black";
-  font-weight: 800;
-  width: 100%;
-  color: black;
-  text-align: center;
-  height: 50px;
-  font-family: Fraunces;
 }
 
 .main-section__description-card {
@@ -38,23 +28,18 @@
 
 .video {
   width: 100%;
+  display: block;
 }
 @media (min-width: 1024px) {
   .main-section-wrapper {
     background: #fff;
-    /* padding: 40px 60px 40px 40px; */
     padding: 40px 60px 80px 40px;
   }
 
   .main-section-wrapper:nth-child(even) {
     flex-direction: row;
     /* padding: 40px 40px 40px 60px; */
-    padding: 80px 40px 80px 60px;
-  }
-  .main-section-wrapper:last-child {
-    /* flex-direction: row; */
-    /* padding: 40px 40px 40px 60px; */
-    /* padding: 80px 40px 80px 60px; */
+    padding: 80px 40px 40px 60px;
   }
 
   .main-section-wrapper .main-section {
@@ -90,8 +75,7 @@
     align-items: flex-start;
   }
   .main-section__title,
-  .main-section__content,
-  .main-section__button {
+  .main-section__content {
     text-align: left;
   }
 }
