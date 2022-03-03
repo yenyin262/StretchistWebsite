@@ -12,16 +12,17 @@
 
 .testimonial__heading {
   text-align: center;
-  font-family: Fraunces;
+  /* font-family: Fraunces; */
+  font-family: var(--st-text-font-family);
   color: var(--color-neutral-darkgreyblue);
   font-size: 20px;
-  font-weight: 800;
-  letter-spacing: 5px;
+  font-weight: 600;
+  letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
   .testimonial__list {
     flex-direction: row;
   }
