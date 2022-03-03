@@ -1,7 +1,9 @@
 .aboutme_mainheading {
   text-align: center;
-  font-size: 28px;
+  font-size: 35px;
   margin: 32px;
+  font-family: var(--st-text-font-family);
+  font-weight: 600;
 }
 
 .imgContainer {
@@ -20,9 +22,11 @@
 
 .corevalues__subheading,
 .myexperience__subheading {
-  font-size: 35px;
+  font-size: 32px;
   text-align: center;
   padding: 10px 10px 30px;
+  font-family: var(--st-text-font-family);
+  font-weight: 500;
 }
 
 .corevalueItem,
@@ -37,16 +41,27 @@
 
 .corevalue__label {
   margin-bottom: 15px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  font-family: var(--st-text-font-family);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .description {
   text-align: center;
+  font-family: var(--st-text-font-family);
+  font-weight: 300;
 }
 
 .numbers {
   font-size: 30px;
+  font-family: var(--st-text-font-family);
+  font-weight: 500;
 }
 .myexperience__label {
   text-align: center;
+  font-family: var(--st-text-font-family);
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .aboutme_mainheading {
@@ -75,8 +90,9 @@
     max-width: 200px;
   }
   .numbers {
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
+    font-weight: 500;
   }
 }
 
