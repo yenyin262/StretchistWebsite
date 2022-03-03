@@ -13,16 +13,16 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
   const { ref: footerref, inView: footerinView } = useInView({});
 
   return (
-    <div className={`Container`}>
+    <div>
       <Layout
         preview={preview}
         isNavBarScrolled={!inView}
-        isNavBarFilled={true}
+        isNavBarFilled={false}
         stickyNavBar
         showDrawerTab={!footerinView}
         hasDrawerTab={true}
-        navLinkColor="#000"
-        navBgColor={inView ? "transparent" : "rgb(224, 242, 241)"}
+        navLinkColor={inView ? "#fff" : "rgb(29, 93, 68)"}
+        navBgColor={inView ? " rgb(59 58 64 / 50%)" : "rgb(224, 242, 241)"}
       >
         <div ref={ref} className={styles["stretchfacts-test"]}>
           <h3 className={styles.heading}>{heading}</h3>
@@ -31,51 +31,14 @@ const JoinUs = ({ heading, videoClip, whyStretchSection, preview }) => {
             Sorry, your browser doesnt support embedded videos.
           </video>
         </div>
-        <div
-          style={{
-            padding: "60px 0 ",
-            textAlign: "center",
-            backgroundColor: "#fffff",
-          }}
-        >
+        <div className={styles.title}>
           <h1> {whyStretchSection.title}</h1>
         </div>
 
-        {/* map through the sections  */}
         {whyStretchSection.facts.map((fact, index) => {
           return <StretchContent fact={fact} key={index} />;
         })}
 
-        {/* <div>
-          {whyStretchSection.facts.map((fact, index) => {
-            return (
-              <div key={index} className={styles["stretchfacts-list"]}>
-                <div className={styles.stretchItem}>
-                  <div className={styles["stretchfacts-img_card"]}>
-                    <Image
-                      src={fact.image}
-                      alt={fact.altDescription}
-                      width={400}
-                      height={220}
-                      layout="responsive"
-                      className={styles.img}
-                    />
-                  </div>
-                  <div className={styles["stretch-content"]}>
-                    <div className={styles.item}>
-                      <h3 className={styles["stretch-content_title"]}>
-                        {fact.title}
-                      </h3>
-                      <p className={styles["stretch-content_content"]}>
-                        {fact.content}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div> */}
         <div ref={footerref}></div>
       </Layout>
     </div>
