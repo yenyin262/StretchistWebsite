@@ -8,6 +8,7 @@ import ToggleButton from "../ToggleButton/ToggleButton";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import logo from "../../public/StretchistFinal.svg";
+import CloseIcon from "../CloseIcon/CloseIcon";
 
 const NavBar = ({
   isScrolled,
@@ -59,7 +60,7 @@ const NavBar = ({
           className={styles.togglebutton}
           onClick={() => setMobileNavmenu(!mobileNavmenu)}
         >
-          <ToggleButton />
+          {!mobileNavmenu ? <ToggleButton /> : <CloseIcon />}
         </button>
 
         {mobileNavmenu && <MobileMenu />}
