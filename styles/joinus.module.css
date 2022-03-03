@@ -19,38 +19,20 @@
   font-size: 25px;
   text-align: center;
   width: 100%;
-}
-.stretchfacts-img_card {
-  padding: 15px;
-}
-.stretch-content {
-  padding: 40px 40px;
+  font-family: var(--st-text-font-family);
+  font-weight: 400;
 }
 
-.stretch-content_title {
-  text-align: left;
+.title h1 {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+  font-family: var(--st-text-font-family);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 22px;
 }
 
-.stretch-content_content {
-  text-align: left;
-  padding: 35px 0 0;
-}
-
-.stretchfacts-list:nth-of-type(1n) {
-  background-color: #f0f0e8;
-}
-.stretchfacts-list:nth-of-type(2n) {
-  background-color: #edf6f0;
-}
-.stretchfacts-list:nth-of-type(3n) {
-  background-color: #e7e5db;
-}
-
-.stretchfacts-list:nth-of-type(1n),
-.stretchfacts-list:nth-of-type(2n),
-.stretchfacts-list:nth-of-type(3n) {
-  padding-top: 60px;
-}
 @media (min-width: 768px) {
   .poster {
     display: none;
@@ -63,69 +45,13 @@
     width: 100%;
     display: block;
   }
-  .stretch-content {
-    padding: 100px 40px;
-  }
-
-  .stretchItem {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-
-  .stretchfacts-list:nth-child(even) .stretchItem {
-    flex-direction: row;
-  }
-
-  .stretch-content {
-    display: flex;
-    justify-self: center;
-    width: 50%;
-    align-items: center;
-    padding: 0;
-  }
-  .stretchfacts-img_card {
-    width: 50%;
-    max-width: 450px;
-    transition: 100ms transform ease-in-out;
-    margin: 0;
-  }
-
-  .item {
-    max-width: 600px;
-  }
 
   .heading {
     bottom: 23%;
     font-size: 40px;
   }
-  .stretchfacts-list:nth-of-type(1n),
-  .stretchfacts-list:nth-of-type(2n),
-  .stretchfacts-list:nth-of-type(3n) {
-    padding: 60px 60px;
-  }
-}
 
-@media (min-width: 1024px) {
-  .stretchItem {
-    max-width: 1280px;
-    margin: 60px auto;
-  }
-  .stretchfacts-img_card {
-    padding: 0;
-  }
-  .stretchfacts-list:nth-of-type(odd) .stretchfacts-img_card {
-    box-shadow: 0.5rem 0.5rem #40c2a6, -0.5rem -0.5rem #f2d725;
-  }
-
-  .stretchfacts-list:nth-of-type(even) .stretchfacts-img_card {
-    box-shadow: 0.5rem 0.5rem #18c0cc, -0.5rem -0.5rem #f75b35;
-  }
-
-  .stretchfacts-img_card {
-    margin-left: 30px;
-  }
-  .stretchfacts-list:nth-of-type(2n) .stretchfacts-img_card {
-    margin-right: 30px;
+  .title h1 {
+    font-size: 28px;
   }
 }
