@@ -1,10 +1,8 @@
 import styles from "./StretchContent.module.css";
-import Link from "next/link";
 import Image from "next/image";
 import PropTypes from "prop-types";
 
 const StretchContent = ({ fact, key }) => {
-  console.log(fact, "fact");
   return (
     <>
       <style jsx>{`
