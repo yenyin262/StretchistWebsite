@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   text-align: justify;
 }
 
@@ -30,6 +31,11 @@
   height: 250px; */
   width: 250px;
   height: 250px;
+}
+
+.content {
+  font-family: var(--st-text-font-family);
+  font-weight: 400;
 }
 
 @media (min-width: 1024px) {

@@ -3,7 +3,7 @@
   display: inline-block;
   padding: 10px 20px;
   color: #1d5d44;
-  font-family: "Barlow";
+  font-family: var(--st-text-font-family);
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
