@@ -24,9 +24,9 @@ const HeroImage = ({ children, heroImage, title, subtitle }) => {
               className={styles.img}
             />
           </div> */}
-          <div className={classnames(`heroImgBgd`, styles.hero__heading)}>
-            <h1>{title}</h1>
-            <h3 style={{ color: "hsl(156deg 50% 48%)" }}>{subtitle}</h3>
+          <div className={classnames(`heroImgBgd`)}>
+            <h1 className={styles.hero__heading}>{title}</h1>
+            <h3 className={styles.subtitle}>{subtitle}</h3>
           </div>
         </div>
       </div>
