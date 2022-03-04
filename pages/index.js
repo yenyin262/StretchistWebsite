@@ -50,7 +50,7 @@ const Home = ({
               }
               isNavLinkFilled={false}
               isScrolled={!isScrolled}
-              navLinkColor={isScrolled ? "#e8f0f2" : "#000"}
+              navLinkColor={isScrolled ? "#e8f0f2" : "rgb(29, 93, 68)"}
               sticky
             />
           </HeroImage>
