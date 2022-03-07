@@ -16,7 +16,10 @@ const navItems = [
   { title: "Contact", link: "/contact" },
 ];
 
-const NavItems = ({ linkColor = "white", isFilled = false }) => {
+const NavItems = ({
+  linkColor = "var(--st-color-primary-white)",
+  isFilled = false,
+}) => {
   return (
     <div className={styles["main-nav__list"]}>
       {navItems.map((item, index) => {
