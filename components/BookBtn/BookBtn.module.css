@@ -13,7 +13,7 @@
 
 .book-btn a:hover {
   background: #1d5d44;
-  color: #fff;
+  color: var(--st-color-primary-white);
   border-radius: 5px;
 }
 

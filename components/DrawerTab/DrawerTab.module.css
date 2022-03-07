@@ -17,7 +17,7 @@
   text-align: center;
   cursor: pointer;
   font-size: 14px;
-  color: #fff;
+  color: var(--st-color-primary-white);
   transition: all 0.15s ease-out;
   border-radius: 6px 6px 0px 0px;
   font-family: var(--st-text-font-family);

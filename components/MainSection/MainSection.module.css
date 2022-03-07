@@ -28,10 +28,9 @@
 }
 
 .main-section__button {
-  color: "black";
   font-weight: 400;
   width: 100%;
-  color: black;
+  color: #000;
   text-align: center;
   height: 50px;
   font-family: var(--st-text-font-family);
@@ -47,7 +46,7 @@
 }
 @media (min-width: 1024px) {
   .main-section-wrapper {
-    background: #fff;
+    background: var(--st-color-primary-white);
     padding: 40px 60px 80px 40px;
   }
 
