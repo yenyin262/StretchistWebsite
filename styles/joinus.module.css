@@ -26,7 +26,7 @@
 .title h1 {
   padding: 60px 0;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--st-color-primary-white);
   font-family: var(--st-text-font-family);
   font-weight: 500;
   text-transform: capitalize;

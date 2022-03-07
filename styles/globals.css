@@ -14,6 +14,7 @@
   --color-neutral-greyblue: #515252;
   --color-neutral-white: hsl(0, 0%, 100%);
   --st-text-font-family: Poppins, Arial, Helvetica, sans-serif;
+  --st-color-primary-white: #fff;
 }
 
 html,
