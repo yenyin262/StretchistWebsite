@@ -24,10 +24,10 @@ const Contact = ({ title, message, email, preview }) => {
               href="https://calendly.com/thestretchist/book-your-session"
               target="_blank"
               rel="noreferrer"
-              className={styles.as}
+              className={styles.calendlyLink}
             >
               <span
-                data-content="  Click here to get stretched!"
+                data-content="Click here to get stretched!"
                 aria-hidden="true"
               ></span>{" "}
               Click here to get stretched!
