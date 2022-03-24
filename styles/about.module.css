@@ -1,7 +1,7 @@
 .aboutme_mainheading {
   text-align: center;
   font-size: 35px;
-  margin: 32px;
+  /* margin: 32px; */
   font-family: var(--st-text-font-family);
   font-weight: 600;
 }
@@ -98,7 +98,8 @@
 
 @media (min-width: 1024px) {
   .aboutme_mainheading {
-    margin: 32px 32px 60px;
+    /* margin: 32px 32px 60px; */
+    margin: 0;
   }
   .aboutContent {
     display: flex;
